@@ -12,7 +12,7 @@ body {
     "hero hero hero"
     "content content content"
     "footer footer footer";
-    grid-template-rows: 7vh 40vh auto 20vh;
+    grid-template-rows: auto 40vh auto 20vh;
 }
 
 a {
@@ -21,7 +21,21 @@ a {
 
 .header {
     grid-area: header;
+    grid-template-areas:
+    "logo logo nav nav nav";
     background-color: aqua;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo span {
+    color: white;
+}
+
+.logo img {
+    max-width: 100px;
 }
 
 .hero {
