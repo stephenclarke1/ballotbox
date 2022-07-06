@@ -1,3 +1,12 @@
+:root {
+    --clr-primary-dark: #4E2966;
+
+    --header-height: 86.5px;
+
+
+
+}
+
 html {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -7,35 +16,52 @@ body {
     margin: 0;
     display: grid;
     min-height: 100vh;
-    grid-template-areas:
-    "header header header"
+    grid-template:
+    "header header header" var(--header-height)
     "hero hero hero"
     "content content content"
     "footer footer footer";
-    grid-template-rows: auto 40vh auto 20vh;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-.header {
+.page-header {
+    display: grid;
     grid-area: header;
-    grid-template-areas:
-    "logo logo nav nav nav";
-    background-color: aqua;
+    grid-template:
+    "logo . nav" var(--header-height);
+    background-color: var(--clr-primary-dark);
 }
 
 .logo {
     grid-area: logo;
-}
-
-.logo span {
-    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: .3rem;
 }
 
 .logo img {
-    max-width: 100px;
+    height: var(--header-height);
+}
+
+.logo-wordmark {
+    color: white;
+    flex-shrink: 1;
+    height: var(--header-height);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: fit-content;
+    height: min-content;
+    padding-left: .6rem;
+    font-size: 1.2rem;
+}
+
+nav {
+    grid-area: nav;
 }
 
 .hero {
