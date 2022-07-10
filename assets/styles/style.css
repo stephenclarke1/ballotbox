@@ -1,5 +1,9 @@
 :root {
     --clr-primary-dark: #4E2966;
+    --clr-text-light: #fff;
+    --clr-text-dark: #000;
+
+
 
     --header-height: 86.5px;
 
@@ -25,7 +29,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-text-dark);
 }
 
 .page-header {
@@ -34,6 +38,11 @@ a {
     grid-template:
     "logo . nav" var(--header-height);
     background-color: var(--clr-primary-dark);
+    color: var(--clr-text-light);
+}
+
+.page-header a {
+    color: var(--clr-text-light);
 }
 
 .logo {
@@ -43,7 +52,7 @@ a {
     margin-left: .3rem;
 }
 
-.logo img {
+.logo .onslow-emblem {
     height: var(--header-height);
 }
 
@@ -62,6 +71,18 @@ a {
 
 nav {
     grid-area: nav;
+}
+
+.nav-list {
+    margin: 0;
+    height: var(--header-height);
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    padding-right: 1.6rem;
 }
 
 .hero {
