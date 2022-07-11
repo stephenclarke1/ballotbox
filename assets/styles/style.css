@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,700;1,700&family=Work+Sans:ital,wght@0,600;1,600&display=swap');
+
 :root {
     --clr-primary-dark: #4E2966;
     --clr-text-light: #fff;
     --clr-text-dark: #000;
 
-
-
     --header-height: 86.5px;
 
+    --ff-primary: 'Raleway', sans-serif;
+    --ff-secondary: 'Work Sans', sans-serif;
+    --ff-body: 'Poppins', sans-serif;
 
 
 }
@@ -16,13 +19,19 @@ html {
     font-family: sans-serif;
 }
 
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     margin: 0;
     display: grid;
     min-height: 100vh;
     grid-template:
     "header header header" var(--header-height)
-    "hero hero hero"
+    "hero hero hero" calc(80vh - var(--header-height))
     "content content content"
     "footer footer footer";
 }
@@ -39,6 +48,7 @@ a {
     "logo . nav" var(--header-height);
     background-color: var(--clr-primary-dark);
     color: var(--clr-text-light);
+    font-family: var(--ff-secondary);
 }
 
 .page-header a {
@@ -50,6 +60,11 @@ a {
     display: flex;
     align-items: center;
     margin-left: .3rem;
+    font-family: var(--ff-primary);
+}
+
+.logo:hover .logo-wordmark, .logo:focus .logo-wordmark {
+    text-decoration: underline;
 }
 
 .logo .onslow-emblem {
@@ -66,7 +81,7 @@ a {
     min-height: fit-content;
     height: min-content;
     padding-left: .6rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -75,15 +90,37 @@ nav {
 
 .nav-list {
     margin: 0;
+    padding: 0;
     height: var(--header-height);
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: end;
 }
 
 .nav-list li {
     padding-right: 1.6rem;
 }
+
+.nav-list li:first-child {
+    padding-left: 1.6rem;
+}
+
+.nav-list li a {
+    text-decoration: underline;
+}
+
+.nav-list li a:hover, .nav-list li a:focus {
+    text-decoration: none;
+}
+
+.dropdown::after {
+    display: inline-block;
+    margin-left: .3rem;
+    font: var(--fa-font-solid);
+    content: "\f0d7";
+}
+
 
 .hero {
     grid-area: hero;
