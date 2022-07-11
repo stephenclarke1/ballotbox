@@ -2,6 +2,7 @@
 
 :root {
     --clr-primary-dark: #4E2966;
+    --clr-primary-light: #D798FF;
     --clr-text-light: #fff;
     --clr-text-dark: #000;
 
@@ -16,7 +17,7 @@
 
 html {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: var(--ff-body);
 }
 
 .icon::before {
@@ -31,9 +32,13 @@ body {
     min-height: 100vh;
     grid-template:
     "header header header" var(--header-height)
-    "hero hero hero" calc(80vh - var(--header-height))
+    "hero hero hero" calc(90vh - var(--header-height))
     "content content content"
     "footer footer footer";
+}
+
+h1 {
+    font-family: var(--ff-primary);
 }
 
 a {
@@ -56,10 +61,11 @@ a {
 }
 
 .logo {
+    
     grid-area: logo;
     display: flex;
     align-items: center;
-    margin-left: .3rem;
+    margin-left: .5rem;
     font-family: var(--ff-primary);
 }
 
@@ -124,12 +130,32 @@ nav {
 
 .hero {
     grid-area: hero;
-    background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    margin: 0;
 }
 
 .content {
     grid-area: content;
-    background-color: blue;
+    background-color: var(--clr-primary-light);
+}
+
+.tri {
+    margin: 0;
+    position: relative;
+    transform: rotate(180deg);
+}
+
+.tri::after {
+    background: var(--clr-primary-light);
+    clip-path: polygon(0 0, 0 5.5rem, 120rem 0px);
+    content: '';
+    height: 100vh;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
 .footer {
