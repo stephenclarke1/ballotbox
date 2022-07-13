@@ -7,6 +7,9 @@
 :root {
     --clr-primary-dark: #4E2966;
     --clr-primary-light: #D798FF;
+    --clr-secondary-dark: #3D52D5;
+    --clr-secondary-medium: #6A7DF8;
+    --clr-secondary-light: #CBEAFF;
     --clr-text-light: #fff;
     --clr-text-dark: #000;
 
@@ -67,7 +70,6 @@ img {
     grid-area: header;
     grid-template:
     "logo nav" var(--page-header-height);
-    background-color: var(--clr-primary-dark);
     color: var(--clr-text-light);
     font-family: var(--ff-secondary);
 }
@@ -221,6 +223,11 @@ nav {
     padding-top: var(--triangle-height);
 }
 
+.bg-primary-dark {
+    background-color: var(--clr-primary-dark);
+    --clr-triangle: var(--clr-primary-dark);
+}
+
 .bg-primary-light {
     background-color: var(--clr-primary-light);
     --clr-triangle: var(--clr-primary-light);
@@ -236,7 +243,21 @@ nav {
     --clr-triangle: var(--clr-text-dark);
 }
 
+.bg-secondary-dark {
+    background-color: var(--clr-secondary-dark);
+    --clr-triangle: var(--clr-secondary-dark);
+}
+
+.bg-secondary-medium {
+    background-color: var(--clr-secondary-medium);
+    --clr-triangle: var(--clr-secondary-medium);
+}
+
+.bg-secondary-light {
+    background-color: var(--clr-secondary-light);
+    --clr-triangle: var(--clr-secondary-light);
+}
+
 .footer {
     grid-area: footer;
-    background-color: blueviolet;
 }
