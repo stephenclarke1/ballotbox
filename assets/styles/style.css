@@ -232,7 +232,8 @@ nav {
     padding-top: var(--triangle-height);
 }
 
-.featured-articles {
+.featured-articles,
+.featured-videos {
     padding: 1rem 2rem;
     display: grid;
     grid-template:
@@ -253,7 +254,6 @@ nav {
 }
 
 .card {
-    background-color: var(--clr-secondary-light);
     min-width: min-content;
 }
 
