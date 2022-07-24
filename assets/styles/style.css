@@ -243,16 +243,26 @@ nav {
 .featured-articles h1 {
     grid-area: title;
     color: var(--clr-secondary-dark);
+    padding-bottom: 2rem;
 }
 
 .card-container {
     grid-area: card;
     display: flex;
-    flex-shrink: 1;
+    gap: 5vw;
 }
 
 .card {
     background-color: var(--clr-secondary-light);
+    min-width: min-content;
+}
+
+.card-title {
+    padding-left: .5rem;
+}
+
+a:focus .card {
+    outline: 3px solid #000;
 }
 
 a .card-title {
@@ -265,6 +275,11 @@ a:hover .card-title, a:focus .card-title {
 
 .card-date {
     font-size: var(--fs-400);
+    padding-left: .5rem;
+}
+
+.card p {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 .bg-primary-dark {
