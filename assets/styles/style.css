@@ -2,11 +2,12 @@
 
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
     --clr-primary-dark: #4E2966;
-    --clr-primary-light: #D798FF;
+    --clr-primary-light: #E7C1FF; /*#D798FF*/
     --clr-secondary-dark: #3D52D5;
     --clr-secondary-medium: #6A7DF8;
     --clr-secondary-light: #CBEAFF;
@@ -38,8 +39,11 @@ html {
 
 body {
     margin: 0;
-    display: grid;
     min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
     grid-template:
     "header header header" var(--page-header-height)
     "hero hero hero" calc(85vh - var(--page-header-height))
@@ -241,7 +245,8 @@ nav {
     "card card card";
 }
 
-.featured-articles h1 {
+.featured-articles h1,
+.featured-videos h1 {
     grid-area: title;
     color: var(--clr-secondary-dark);
     padding-bottom: 2rem;
@@ -254,7 +259,12 @@ nav {
 }
 
 .card {
-    min-width: min-content;
+    flex: 1;
+    background-color: var(--clr-secondary-light);
+}
+
+.card img {
+    width: 100%;
 }
 
 .card-title {
