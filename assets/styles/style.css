@@ -24,6 +24,8 @@
     --fs-400: 1rem;
     --fs-600: 2.35rem;
     --fs-800: 2.7rem;
+
+    --fw-300: 300;
 }
 
 html {
@@ -72,6 +74,7 @@ a {
 
 a:focus {
     outline: 3px solid var(--clr-text-light);
+    text-decoration: none;
 }
 
 img {
@@ -212,8 +215,12 @@ nav {
     grid-auto-flow: column;
 }
 
+.even-sections p {
+    padding-top: 1rem;
+}
+
 .left, .right {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
 }
 
 .left {
@@ -236,17 +243,15 @@ nav {
     padding-top: var(--triangle-height);
 }
 
-.featured-articles,
-.featured-videos {
-    padding: 1rem 2rem;
+.featured-cards {
+    padding: 1rem 5vw;
     display: grid;
     grid-template:
     ". title ."
     "card card card";
 }
 
-.featured-articles h1,
-.featured-videos h1 {
+.featured-cards h1 {
     grid-area: title;
     color: var(--clr-secondary-dark);
     padding-bottom: 2rem;
@@ -258,9 +263,12 @@ nav {
     gap: 5vw;
 }
 
-.card {
+.card-container > a {
     flex: 1;
-    background-color: var(--clr-secondary-light);
+}
+
+.card {
+    --card-padding: .5rem;
 }
 
 .card img {
@@ -268,7 +276,7 @@ nav {
 }
 
 .card-title {
-    padding-left: .5rem;
+    padding-left: var(--card-padding);
 }
 
 a:focus .card {
@@ -284,12 +292,18 @@ a:hover .card-title, a:focus .card-title {
 }
 
 .card-date {
-    font-size: var(--fs-400);
-    padding-left: .5rem;
+    display:inline-block;
+    margin-left: var(--card-padding);
+    margin-top: calc(var(--card-padding) * 1.25);
+    font-weight: var(--fw-300);
 }
 
 .card p {
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    padding: calc(var(--card-padding) * 1.7) var(--card-padding) 0;
+}
+
+.card:last-child {
+    padding-bottom: calc(var(--card-padding) * 2);
 }
 
 .bg-primary-dark {
@@ -327,10 +341,35 @@ a:hover .card-title, a:focus .card-title {
     --clr-triangle: var(--clr-secondary-light);
 }
 
-.footer {
+footer {
+    margin-top: var(--triangle-height) ;
     grid-area: footer;
+    color: var(--clr-text-light);
 }
 
-footer .tri::after {
-    margin-top: calc(var(--triangle-height) * -1);
+.footer-grid-container {
+    display: grid;
+    grid-template:
+    "nav small-print";
+}
+
+footer .nav-list {
+    justify-content: start;
+    font-family: var(--ff-secondary);
+}
+
+footer a {
+    color: var(--clr-text-light);
+    text-decoration: underline;
+}
+
+.small-print {
+    grid-area: small-print;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-print p {
+    padding-top: 0;
 }
