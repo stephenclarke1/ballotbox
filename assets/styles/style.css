@@ -350,6 +350,7 @@ footer {
     margin-top: var(--triangle-height) ;
     grid-area: footer;
     color: var(--clr-text-light);
+    padding-bottom: 1.6rem;
 }
 
 .footer-grid-container {
@@ -361,6 +362,7 @@ footer {
 footer .nav-list {
     justify-content: start;
     font-family: var(--ff-secondary);
+    flex-wrap: wrap;
 }
 
 footer a {
@@ -377,6 +379,8 @@ footer a {
 
 .small-print p {
     padding-top: 0;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 }
 
 @media screen and (max-width: 979px) {
@@ -399,13 +403,70 @@ footer a {
 }
 
 @media screen and (max-width: 975px) {
+
+    .featured-cards {
+    grid-template:
+    "title title title"
+    "card card card";
+    }
+
+    .featured-cards h1 {
+        text-align: center;
+    }
+
+    .card-container a {
+        width: 42.5vw;
+    }
+    
     .card-container a:last-of-type {
         display: none;
+    }
+}
+
+@media screen and (max-width: 904px) {
+    .footer-grid-container {
+        grid-template:
+        "nav"
+        "small-print";
+        gap: 1rem;
+    }
+
+    footer .small-print {
+        text-align: center;
+    }
+
+    footer .nav-list {
+        justify-content: center;
+        flex-direction: column;
+        gap: .45rem;
+        height: auto;
+    }
+
+    footer .nav-list li {
+        padding: .45rem 0;
+    }
+
+    footer .nav-list li:first-child {
+        padding-left: 0;
     }
 }
 
 @media screen and (max-width: 849px) {
     .primary-nav .nav-list {
         display: none;
+    }
+
+    html {
+    font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-container a {
+        width: auto;
     }
 }
