@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="grid-container">
-        <header class="page-header bg-primary-dark">
+        <header class="page-header">
             <a href="/" class="logo">
                 <img src="assets/images/onslow-logo.png" alt="Onslow College Emblem" class="onslow-emblem">
                 <div class="logo-wordmark">
@@ -21,17 +21,29 @@
             <nav class="primary-nav">
                 <ul role="list" class="nav-list">
                     <li><a href="/" title="Home" class="active-link">Home</a></li>
-                    <li><a href="#" class="dropdown">Curriculum</a></li>
-                    <li><a href="#" class="dropdown">Ensembles</a></li>
-                    <li><a href="#" title="Music Lessons">Music Lessons</a></li>
-                    <li><a href="#" title="Events">Events</a></li>
+                    <li>
+                        <a href="#" class="dropdown">Curriculum</a>
+                        <ul class="dropdown-submenu">
+                            <li><a href="/curriculum/junior-school.html">Junior School</a></li>
+                            <li><a href="/curriculum/senior-school.html">Senior School</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown">Ensembles</a>
+                        <ul class="dropdown-submenu not-visible">
+                            <li><a href="/ensembles/choir.html">Choir</a></li>
+                            <li><a href="/ensembles/orchestra.html">Orchestra</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/lessons.html" title="Music Lessons">Music Lessons</a></li>
+                    <li><a href="/events.html" title="Events">Events</a></li>
                 </ul>
             </nav>
         </header>
         <section class="hero" style="background-image: url('/assets/images/hero-purple.jpg'); background-repeat: no-repeat;"></section>
         <main class="content">
             <div class="tri bg-primary-light" aria-hidden="true"></div>
-            <section class="even-sections bg-primary-light">
+            <section class="homepage-about bg-primary-light">
                 <div class="left">
                     <h1>About Us</h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis metus arcu, vitae malesuada sem placerat sed. Aenean placerat mauris faucibus ante pulvinar, ac tincidunt leo convallis. Vivamus non sem tincidunt, egestas orci in, porttitor turpis. Nunc fermentum lectus purus, eget convallis libero convallis eu. Morbi pharetra nunc et turpis euismod molestie. Vivamus facilisis, lacus nec mattis faucibus, quam eros posuere est, eu feugiat nulla est non tellus. Aenean ut consectetur sem. Morbi consectetur at libero vel placerat. Phasellus interdum odio ullamcorper, sodales tellus non, vehicula tellus. Nulla elit nisi, auctor vel dignissim eu, pretium et arcu. Proin cursus tellus justo, eget volutpat risus sagittis viverra.</p>
