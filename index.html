@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Onslow College Music</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="/assets/scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,15 +23,15 @@
                 <ul role="list" class="nav-list">
                     <li><a href="/" title="Home" class="active-link">Home</a></li>
                     <li>
-                        <a href="#" class="dropdown">Curriculum</a>
-                        <ul class="dropdown-submenu">
+                        <button onclick="myFunction(this)" class="dropdown-button">Curriculum</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
                             <li><a href="/curriculum/junior-school.html">Junior School</a></li>
                             <li><a href="/curriculum/senior-school.html">Senior School</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="dropdown">Ensembles</a>
-                        <ul class="dropdown-submenu not-visible">
+                        <button onclick="myFunction(this)" class="dropdown-button">Ensembles</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
                             <li><a href="/ensembles/choir.html">Choir</a></li>
                             <li><a href="/ensembles/orchestra.html">Orchestra</a></li>
                         </ul>
@@ -40,7 +41,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="hero" style="background-image: url('/assets/images/hero-purple.jpg'); background-repeat: no-repeat;"></section>
+        <section class="hero" style="background-image: url('/assets/images/hero-purple.jpg');"></section>
         <main class="content">
             <div class="tri bg-primary-light" aria-hidden="true"></div>
             <section class="homepage-about bg-primary-light">

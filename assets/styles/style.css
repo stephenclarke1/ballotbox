@@ -76,9 +76,15 @@ a:hover {
     text-decoration: none;
 }
 
-a:focus {
+a:focus-visible {
     outline: 3px solid var(--clr-text-light);
     text-decoration: none;
+}
+
+button:focus-visible {
+    outline: 3px solid var(--clr-text-light);
+    text-decoration: none;
+
 }
 
 img {
@@ -111,7 +117,7 @@ img {
     text-decoration: none;
 }
 
-.logo:hover .logo-wordmark, .logo:focus .logo-wordmark {
+.logo:hover .logo-wordmark, .logo:focus-visible .logo-wordmark {
     text-decoration: underline;
 }
 
@@ -162,15 +168,26 @@ nav {
     text-decoration: underline;
 }
 
-.nav-list li a:hover, .nav-list li a:focus {
+.nav-list li a:hover, .nav-list li a:focus-visible {
     text-decoration: none;
 }
 
-.dropdown {
+.dropdown-button {
     position: relative;
+    background: none;
+    color: var(--clr-text-light);
+    border: 0;
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
-.dropdown::after {
+.dropdown-button:hover {
+    text-decoration: none;
+}
+
+.dropdown-button::after {
     display: inline-block;
     margin-left: .4rem;
     font: var(--fa-font-solid);
@@ -180,7 +197,7 @@ nav {
 .dropdown-submenu {
     position: absolute;
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: 1em 0 0 0;
     padding: .5rem 1rem;
@@ -196,7 +213,6 @@ nav {
 }
 
 .dropdown-submenu li:first-child {
-    /* padding-top: .5em; */
     padding-left: 0;
 }
 
@@ -204,7 +220,7 @@ nav {
     color: var(--clr-text-dropdown-submenu);
 }
 
-.dropdown-submenu a:focus {
+.dropdown-submenu a:focus-visible {
     outline: 3px solid var(--clr-text-dropdown-submenu);;
 }
 
@@ -327,7 +343,7 @@ nav {
     padding-right: var(--card-padding);
 }
 
-a:focus .card {
+a:focus-visible .card {
     outline: 3px solid #000;
 }
 
@@ -335,7 +351,7 @@ a .card-title {
     text-decoration: underline;
 }
 
-a:hover .card-title, a:focus .card-title {
+a:hover .card-title, a:focus-visible .card-title {
     text-decoration: none;
 }
 
@@ -389,8 +405,8 @@ a:hover .card-title, a:focus .card-title {
     --clr-triangle: var(--clr-secondary-light);
 }
 
-.not-visible {
-    display: none;
+.dropdown-visible {
+    display: flex;
 }
 
 footer {
