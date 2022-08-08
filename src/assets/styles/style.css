@@ -91,6 +91,28 @@ img {
     max-width: 100%;
 }
 
+.focus-only-link {
+    margin-left: .5rem;
+    display: flex;
+    top: -10000px;
+    position: absolute;
+    background-color: var(--clr-primary-dark);
+    height: var(--page-header-height);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.focus-only-link:focus-within {
+    top: 0;
+    outline: 3px solid var(--clr-text-light);
+}
+
+.focus-only-link:focus-within a {
+    outline: none;
+}
+
 .page-header {
     display: grid;
     grid-area: header;
@@ -409,6 +431,10 @@ a:hover .card-title, a:focus-visible .card-title {
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 footer {
     margin-top: var(--triangle-height) ;
     grid-area: footer;
@@ -423,7 +449,7 @@ footer {
 }
 
 footer .nav-list {
-    justify-content: start;
+    justify-content: center;
     font-family: var(--ff-secondary);
     flex-wrap: wrap;
 }
@@ -571,7 +597,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 939px) {
 
     :root {
         --triangle-height: 80px;
