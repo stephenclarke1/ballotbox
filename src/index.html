@@ -20,12 +20,17 @@
                     <span>Music</span>
                 </div>
             </a>
-            <nav class="primary-nav">
+            <button class="menu-toggle-button menu-toggle-open">
+                <div class="hamburger" aria-hidden="true"></div>
+                <span>Menu</span>
+            </button>
+            <nav class="primary-nav mobile-menu-open">
                 <ul role="list" class="nav-list">
                     <li><a href="/" title="Home" class="active-link">Home</a></li>
                     <li>
                         <button onclick="myFunction(this)" class="dropdown-button">Curriculum</button>
                         <ul  id="myDropdown" class="dropdown-submenu">
+                            <!-- remember to make caret turn upside down after pressed -->
                             <li><a href="curriculum/junior-school.html">Junior School</a></li>
                             <li><a href="curriculum/senior-school.html">Senior School</a></li>
                         </ul>
