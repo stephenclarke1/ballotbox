@@ -187,7 +187,7 @@ button:focus-visible {
     text-align: center;
     margin-right: 1.5rem;
     height: calc(var(--page-header-height) - 3rem);
-    padding: 1.5rem 1rem 1rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     height: var(--page-header-height);
 }
 
@@ -208,7 +208,8 @@ button:focus-visible {
 }
 
 .hamburger::before {
-    transform: translateY(.5rem);
+    transform: translateY(1rem);
+    opacity: 0;
 }
 
 .hamburger::after {
@@ -219,10 +220,6 @@ button:focus-visible {
     grid-area: text;
     text-align: center;
     font-size: var(--fs-300);
-}
-
-.menu-toggle-open {
-    padding-top: 2.4rem;
 }
 
 .menu-toggle-open .hamburger {
@@ -516,6 +513,14 @@ a:hover .card-title, a:focus-visible .card-title {
     display: none;
 }
 
+.hidden-until-mobile {
+    display: none;
+}
+
+.post-content {
+    background-color: var(--clr-text-light);
+}
+
 footer {
     margin-top: var(--triangle-height) ;
     grid-area: footer;
@@ -697,6 +702,10 @@ footer a {
         display: none;
     }
 
+    .hidden-until-mobile {
+        display: block;
+    }
+
     .primary-nav .nav-list {
         width: 100%;
         flex-direction: column;
@@ -706,7 +715,6 @@ footer a {
         height: 100%;
         gap: 1rem;
         text-align: center;
-        /* height: calc(100vh - var(--page-header-height)); */
     }
 
     .primary-nav li {

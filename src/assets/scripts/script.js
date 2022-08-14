@@ -19,3 +19,14 @@ window.onclick = function(event) {
 // mobile menu toggle
 // when button clicked, add class 'menu-toggle-open'
 // add class 'mobile-menu-open' to primary-nav
+
+function menuToggle () {
+  const menuButton = document.getElementById("menuButton");
+  const navMenu = document.getElementById("primaryNav");
+  menuButton.classList.toggle("menu-toggle-open");
+  if (menuButton.classList.contains("menu-toggle-open")) {
+    navMenu.classList.toggle("mobile-menu-open");
+  } else {
+    navMenu.classList.toggle("mobile-menu-open");
+  }
+}

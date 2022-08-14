@@ -20,11 +20,11 @@
                     <span>Music</span>
                 </div>
             </a>
-            <button class="menu-toggle-button menu-toggle-open">
+            <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
                 <div class="hamburger" aria-hidden="true"></div>
                 <span>Menu</span>
             </button>
-            <nav class="primary-nav mobile-menu-open">
+            <nav id="primaryNav" class="primary-nav">
                 <ul role="list" class="nav-list">
                     <li><a href="/" title="Home" class="active-link">Home</a></li>
                     <li>
@@ -46,6 +46,7 @@
                     <li><a href="lessons.html" title="Music Lessons">Music Lessons</a></li>
                     <li><a href="events.html" title="Events">Events</a></li>
                 </ul>
+                <div class="tri-upside-down bg-primary-dark hidden-until-mobile" aria-hidden="true"></div>
             </nav>
         </header>
         <section class="hero" style="background-image: url('assets/images/hero-purple.jpg');"></section>
