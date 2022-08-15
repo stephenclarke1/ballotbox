@@ -26,11 +26,14 @@
     --fs-800: 2.7rem;
 
     --fw-300: 300;
+
+    --page-side-padding: 5vw;
 }
 
 html {
     box-sizing: border-box;
     font-family: var(--ff-body);
+    scroll-behavior: smooth;
 }
 
 .icon::before {
@@ -370,6 +373,21 @@ nav {
     position: absolute;
 }
 
+.post-content {
+    background-color: var(--clr-secondary-light);
+    --clr-triangle: var(--clr-secondary-light);
+}
+
+.post-container {
+    padding-left: var(--page-side-padding);
+    padding-right: var(--page-side-padding);
+    padding-top: 1.5rem;
+}
+
+.post-body {
+    padding: 1.5rem 0;
+}
+
 .homepage-about {
     display: grid;
     grid-template:
@@ -382,7 +400,7 @@ nav {
 }
 
 .left, .right {
-    padding: 1rem 3rem;
+    padding: 1rem var(--page-side-padding);
 }
 
 .left {
@@ -406,7 +424,7 @@ nav {
 }
 
 .featured-cards {
-    padding: 1rem 5vw;
+    padding: 1rem var(--page-side-padding);
     display: grid;
     grid-template:
     ". title ." 
@@ -423,7 +441,7 @@ nav {
 .card-container {
     grid-area: card;
     display: flex;
-    gap: 5vw;  
+    gap: max(5vw, 3rem);  
 }
 
 .card-container > a {
@@ -517,10 +535,6 @@ a:hover .card-title, a:focus-visible .card-title {
     display: none;
 }
 
-.post-content {
-    background-color: var(--clr-text-light);
-}
-
 footer {
     margin-top: var(--triangle-height) ;
     grid-area: footer;
@@ -532,6 +546,8 @@ footer {
     display: grid;
     grid-template:
     "nav small-print";
+    padding-left: var(--page-side-padding);
+    padding-right: var(--page-side-padding);
 }
 
 footer .nav-list {
@@ -715,6 +731,11 @@ footer a {
         height: 100%;
         gap: 1rem;
         text-align: center;
+    }
+
+    .dropdown-button::after {
+        position: absolute;
+        top: 0;
     }
 
     .primary-nav li {
