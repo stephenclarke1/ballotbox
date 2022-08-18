@@ -49,10 +49,11 @@ body {
 
 .grid-container {
     display: grid;
+    
     grid-template:
     "header header header" var(--page-header-height)
-    "hero hero hero" calc(85vh - var(--page-header-height))
-    "content content content"
+    "hero hero hero"
+    "content content content"   
     "footer footer footer";
 }
 
@@ -334,10 +335,13 @@ nav {
     background-position: 50% 50%;
     overflow: hidden;
     margin: 0;
+    height:  calc(85vh - var(--page-header-height));
+    max-height: 1000px;
 }
 
 .content {
     grid-area: content;
+    padding-bottom: var(--triangle-height);
 }
 
 .tri {
@@ -536,7 +540,6 @@ a:hover .card-title, a:focus-visible .card-title {
 }
 
 footer {
-    margin-top: var(--triangle-height) ;
     grid-area: footer;
     color: var(--clr-text-light);
     padding-bottom: 1.6rem;
@@ -693,9 +696,13 @@ footer a {
         display: grid;
         grid-template:
         "header header header" var(--page-header-height)
-        "hero hero hero" max(300px, calc(45vh - var(--page-header-height)))
+        "hero hero hero"
         "content content content"
         "footer footer footer";
+    }
+
+    .hero {
+        height: calc(40vh - var(--page-header-height));
     }
 
     .page-header {
