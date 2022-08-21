@@ -184,15 +184,14 @@ button:focus-visible {
     text-decoration: underline;
     justify-self: right;
     font-size: 1rem;
-    gap: .75rem;
+    gap: 1rem;
     grid-template:
     "icon"
     "text";
     text-align: center;
     margin-right: 1.5rem;
-    height: calc(var(--page-header-height) - 3rem);
-    padding: 2rem 1rem 1rem 1rem;
     height: var(--page-header-height);
+    padding: 1rem 1rem .5rem 1rem;
 }
 
 .hamburger {
@@ -207,8 +206,7 @@ button:focus-visible {
     background-color: var(--clr-text-light);
     height: 3px;
     width: 3rem;
-    border-radius: 3px;
-    transition: all ease-in-out 500ms;
+    border-radius: 3px;    
 }
 
 .hamburger::before {
@@ -224,6 +222,17 @@ button:focus-visible {
     grid-area: text;
     text-align: center;
     font-size: var(--fs-300);
+}
+
+.menu-toggle-open {
+    grid-template:
+    "icon";
+    padding-top: 2rem;
+    gap: 0;
+}
+
+.menu-toggle-open span {
+    display: none;
 }
 
 .menu-toggle-open .hamburger {
@@ -382,11 +391,6 @@ nav {
     position: absolute;
 }
 
-.post-content {
-    background-color: var(--clr-secondary-light);
-    --clr-triangle: var(--clr-secondary-light);
-}
-
 .post-container {
     padding-left: var(--page-side-padding);
     padding-right: var(--page-side-padding);
@@ -395,6 +399,16 @@ nav {
 
 .post-body {
     padding: 1.5rem 0;
+}
+
+.post-body img {
+    float: right;
+    margin: 1rem;
+}
+
+.youtube-embed-container iframe {
+    width: calc(100vw - (var(--page-side-padding) * 2));
+    aspect-ratio: 16/9;
 }
 
 .homepage-about {
@@ -653,6 +667,7 @@ footer a {
         float: none;
         justify-self: center;
     }
+    
 
 }
 
@@ -706,7 +721,7 @@ footer a {
 @media screen and (max-width: 939px) {
 
     :root {
-        --triangle-height: 80px;
+        --triangle-height: 100px;
     }
 
     .grid-container {
@@ -718,9 +733,9 @@ footer a {
         "footer footer footer";
     }
 
-    .hero {
+    /* .hero {
         height: calc(40vh - var(--page-header-height));
-    }
+    } */
 
     .page-header {
         grid-template:
@@ -790,6 +805,24 @@ footer a {
     html {
     font-size: 17px;
     }
+}
+
+
+@media screen and (max-width: 849px) {
+    .post-body img {
+        float: none;
+        margin: 1rem 0 1rem 0;
+        width: calc(100vw - (var(--page-side-padding) * 2));
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .tri::after {
+        clip-path: polygon(0 0, 0 2rem, 39rem 0px);
+    }
+
+    
 }
 
 @media screen and (max-width: 612px) {
