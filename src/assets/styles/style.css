@@ -420,6 +420,7 @@ nav {
     content: '';
     height: var(--triangle-height);
     width: 100%;
+    top: 100%;
     position: absolute;
 }
 
@@ -491,7 +492,7 @@ nav {
     float: right;
 }
 
-.tri-upside-down + section {
+.tri-upside-down + .content-container {
     padding-top: calc(var(--triangle-height) + 1rem);
 }
 
