@@ -1,0 +1,27 @@
+section {
+    position: relative;
+}
+
+.elementor-shape {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+}
+
+.elementor-shape-bottom {
+    transform: rotate(180deg);
+}
+
+.elementor-shape-bottom svg {
+    transform: rotateY(180deg);
+    z-index: -1;
+    display: block;
+    position: relative;
+}
+
+.elementor-shape-fill {
+    fill: #bcff21;
+}
