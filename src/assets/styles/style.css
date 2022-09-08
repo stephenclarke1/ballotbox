@@ -59,7 +59,7 @@ body {
 }
 
 p {
-    padding-top: .75rem;
+    padding: .75rem 0;
 }
 
 h1 {
@@ -135,7 +135,6 @@ button:focus-visible {
     padding: 1rem;
     align-items: center;
     justify-content: center;
-
 }
 
 .focus-only-link:focus-within {
@@ -143,8 +142,10 @@ button:focus-visible {
     outline: 3px solid var(--clr-text-light);
 }
 
-.focus-only-link:focus-within a {
-    outline: none;
+.focus-only-link a:focus-visible,
+.focus-only-link a:focus {
+    outline: 0 !important;
+    text-decoration: underline !important;
 }
 
 .page-header {
@@ -430,13 +431,55 @@ nav {
     padding-top: 1.5rem;
 }
 
+.post-header {
+
+}
+
+.headline {
+
+}
+
+.bylines {
+
+}
+
+.author {
+    padding: 0;
+    width: min-content;
+}
+
 .post-body {
     padding: 1.5rem 0;
 }
 
-.post-body img {
-    float: right;
+.img-container {
     margin: 1rem;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.centre .img-container {
+    margin: 0;
+    float: none;
+}
+
+.img-caption {
+    padding-top: .5rem;
+    font-size: .8rem;
+    margin-top: 0;
+}
+
+.centre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centre img {
+    margin: 0;
+    max-height: 739.125px;
 }
 
 .video-embed-container {
@@ -456,9 +499,9 @@ nav {
     height: 100%;
 }
 
-.centre {
-    margin: 0 auto !important;
-    float: none !important;
+.map-container {
+    width: 425px;
+    height: 350px;
 }
 
 .homepage-about {
@@ -683,20 +726,6 @@ footer a {
     }
 }
 
-@media screen and (min-width: 1807px) {
-    
-
-    /* .homepage-about {
-        padding-left: calc((100vw - 1807px) / 2);
-        padding-right: calc((100vw - 1807px) / 2);
-    }
-
-    .featured-cards {
-        padding-left: calc((100vw - 1807px) / 2);
-        padding-right: calc((100vw - 1807px) / 2);
-    } */
-}
-
 @media screen and (min-width: 1584px) {
 
     .homepage-about {
@@ -776,7 +805,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 986px) {
+@media screen and (max-width: 1158px) {
 
     :root {
         --triangle-height: 100px;
@@ -799,11 +828,6 @@ footer a {
         grid-template:
         "logo menu-button" var(--page-header-height);
         align-items: center;
-    }
-
-    .logo .onslow-emblem {
-        height: calc(var(--page-header-height) - 30px);
-
     }
 
     .logo-wordmark {
@@ -848,6 +872,10 @@ footer a {
         padding: 1rem;
     }
 
+    .primary-nav a {
+        padding: 1rem;
+    }
+
     .primary-nav li:first-child {
         padding: 1rem;
     }
@@ -860,9 +888,9 @@ footer a {
         display: flex;
     }
 
-    .mobile-menu-open .nav-list li:last-of-type {
+    /* .mobile-menu-open .nav-list li:last-of-type {
         padding-bottom: 2rem;
-    }
+    } */
 
     /* .mobile-menu-open a,
     .mobile-menu-open button {
@@ -872,13 +900,22 @@ footer a {
     html {
     font-size: 17px;
     }
+    
 }
 
 
 @media screen and (max-width: 849px) {
+    .logo .onslow-emblem {
+        height: calc(var(--page-header-height) - 30px);
+
+    }
+
+    .img-container {
+        margin: 0 .5rem 0 .5rem;
+    }
+
     .post-body img {
-        float: none;
-        margin: 1rem 0 1rem 0;
+        margin: 0;
         width: calc(100vw - (var(--page-side-padding) * 2));
         justify-self: center;
     }

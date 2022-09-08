@@ -1,8 +1,13 @@
 section {
     position: relative;
+    --shape-fill: #bcff21;
 }
 
-.elementor-shape {
+p {
+    margin: 0;
+}
+
+.shape {
     overflow: hidden;
     position: relative;
     left: 0;
@@ -11,17 +16,23 @@ section {
     direction: ltr;
 }
 
-.elementor-shape-bottom {
+.shape-triangle {
     transform: rotate(180deg);
 }
 
-.elementor-shape-bottom svg {
+.shape-triangle svg {
     transform: rotateY(180deg);
     z-index: -1;
     display: block;
     position: relative;
 }
 
-.elementor-shape-fill {
-    fill: #bcff21;
+.shape + div {
+    margin-top: -1;
+    background-color: var(--shape-fill);
 }
+
+.shape-fill {
+    fill: var(--shape-fill);
+}
+
