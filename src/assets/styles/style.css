@@ -50,7 +50,7 @@ body {
 
 .grid-container {
     display: grid;
-    
+    /* min-height: 100vh; */
     grid-template:
     "header header header" var(--page-header-height)
     "hero hero hero"
@@ -368,7 +368,7 @@ nav {
     overflow: hidden;
     margin: 0;
     height:  calc(70vh - var(--page-header-height));
-    max-height: 800px;
+    max-height: 700px;
     min-height: 200px;
 }
 
@@ -701,6 +701,10 @@ footer a {
     .page-header {
         padding: 0 calc((100vw - 2560px) / 2);
     }   
+
+    .hero {
+        max-height: 441.2px;
+    }
 
 }
 
