@@ -49,8 +49,8 @@ body {
 }
 
 .grid-container {
-    display: grid;
-    /* min-height: 100vh; */
+    /* display: grid;
+    min-height: 100vh; */
     grid-template:
     "header header header" var(--page-header-height)
     "hero hero hero"
@@ -480,6 +480,20 @@ nav {
 .centre img {
     margin: 0;
     max-height: 739.125px;
+}
+
+form p {
+    padding: 0;
+}
+
+.form-container {
+    max-width: 870px;
+    height: 955px;
+}
+
+.form-container iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .video-embed-container {
