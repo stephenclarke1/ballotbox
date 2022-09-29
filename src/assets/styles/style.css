@@ -44,17 +44,31 @@ html {
 }
 
 body {
+     /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
     margin: 0;
     min-height: 100vh;
 }
 
 .grid-container {
-    /* display: grid;
-    min-height: 100vh; */
+    display: grid;
     grid-template:
     "header header header" var(--page-header-height)
     "hero hero hero"
-    "content content content"   
+    "content content content"  
     "footer footer footer";
 }
 
@@ -482,6 +496,14 @@ nav {
     max-height: 739.125px;
 }
 
+.small-paragraphs p {
+    padding: 0;
+}
+
+.small-paragraphs {
+    padding-bottom: 1rem;
+}
+
 form p {
     padding: 0;
 }
@@ -674,6 +696,10 @@ a:hover .card-title, a:focus-visible .card-title {
 
 footer {
     grid-area: footer;
+    /* position: fixed;
+    bottom: 0;
+    width: 100vw;
+    right: 0; */
     color: var(--clr-text-light);
     padding-bottom: 1.6rem;
     /* margin-top: var(--triangle-height); */
@@ -682,7 +708,7 @@ footer {
 .footer-grid-container {
     display: grid;
     grid-template:
-    "nav small-print";
+    "nav small-print" / 1fr 1fr;
     padding-left: var(--page-side-padding);
     padding-right: var(--page-side-padding);
 }
@@ -706,9 +732,7 @@ footer a {
 }
 
 .small-print p {
-    padding-top: 0;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding: 0;
 }
 
 @media screen and (min-width: 2561px) {
@@ -817,6 +841,10 @@ footer a {
         "nav"
         "small-print";
         gap: 1rem;
+    }
+
+    footer {
+        position: relative;
     }
 
     footer .small-print {
