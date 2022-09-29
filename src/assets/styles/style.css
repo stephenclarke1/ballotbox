@@ -7,7 +7,7 @@
 
 :root {
     --clr-primary-dark: #63337a;
-    --clr-primary-light: #E7C1FF; /*#D798FF*/
+    --clr-primary-light: #E7C1FF; /*#D798FF */
     --clr-secondary-dark: #3D52D5;
     --clr-secondary-medium: #6A7DF8;
     --clr-secondary-light: #CBEAFF;
@@ -44,21 +44,6 @@ html {
 }
 
 body {
-     /* These are technically the same, but use both */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-
-  -ms-word-break: break-all;
-  /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
-  /* Instead use this non-standard one: */
-  word-break: break-word;
-
-  /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
     margin: 0;
     min-height: 100vh;
 }
@@ -497,7 +482,7 @@ nav {
 }
 
 .small-paragraphs p {
-    padding: 0;
+    padding: 0.7rem 0;
 }
 
 .small-paragraphs {
@@ -590,6 +575,10 @@ form p {
     "card card card";
 }
 
+.link-cards {
+    flex-wrap: wrap;
+}
+
 .featured-cards h1 {
     grid-area: title;
     color: var(--clr-secondary-dark);
@@ -605,6 +594,15 @@ form p {
 
 .card-container > a {
     flex: 1;
+}
+
+.link-cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/0.4;
+    text-align: center;
+    padding: calc(var(--card-padding) * 3) 0 calc(var(--card-padding) * 3) 0;
 }
 
 .card {
@@ -833,6 +831,10 @@ footer a {
     .card-container a:last-of-type {
         display: none;
     }
+
+    .link-cards .card-container a:last-of-type {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 904px) {
@@ -981,6 +983,21 @@ footer a {
         margin: 0;
         width: calc(100vw - (var(--page-side-padding) * 2));
         justify-self: center;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    .link-cards .card-container {
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .card-container {
+        align-items: center;
+    }
+
+    .link-cards .card-container .card {
+        max-width: 370px;
     }
 }
 
