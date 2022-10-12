@@ -49,6 +49,7 @@ body {
 }
 
 .grid-container {
+    min-height: 100vh;
     display: grid;
     grid-template:
     "header header header" var(--page-header-height)
@@ -74,6 +75,7 @@ h2 {
 a {
     text-decoration: underline;
     color: var(--clr-text-dark);
+    display: inline-block;
 }
 
 .featured-cards a {
@@ -489,6 +491,14 @@ nav {
     padding-bottom: 1rem;
 }
 
+.cta-button {
+    cursor: pointer;
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-text-light);
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
 form p {
     padding: 0;
 }
@@ -605,12 +615,25 @@ form p {
     padding: calc(var(--card-padding) * 3) 0 calc(var(--card-padding) * 3) 0;
 }
 
+.img-card-no-article .card {
+    text-align: center;
+    aspect-ratio: 1/0.4;
+}
+
+.img-card-no-article .card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
 .card {
     --card-padding: .5rem;
 }
 
 .card img {
     width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
 }
 
 .card-title {
@@ -727,6 +750,7 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .small-print p {
@@ -832,7 +856,7 @@ footer a {
         display: none;
     }
 
-    .link-cards .card-container a:last-of-type {
+    .link-cards .card-container a:last-of-type, .img-card-no-article .card-container a:last-of-type {
         display: block;
     }
 }
@@ -990,9 +1014,6 @@ footer a {
     .link-cards .card-container {
         gap: 3rem;
         flex-direction: column;
-    }
-
-    .card-container {
         align-items: center;
     }
 
