@@ -13,7 +13,9 @@ collections:
     folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    ---
     layout: 'article.njk'
+    ---
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
@@ -27,7 +29,9 @@ collections:
     label: "Video"
     folder: "src/posts/videos"
     create: true
+    ---
     layout: 'video.njk'
+    ---
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
