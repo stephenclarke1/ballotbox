@@ -1,0 +1,20 @@
+---
+layout: 'base.njk'
+---
+
+<section class="hero" style="background-image: url('{{ image }}');"></section>
+        <main class="content bg-text-light post-content" id="main">
+            <div class="tri" aria-hidden="true"></div>
+            <div class="post-container content-container">
+                <header class="post-header">
+                    <h1 class="headline">{{ title }}</h1>
+                    <div class="bylines">
+                        <time datetime="2022-06-14T15:10:00NZST">14th June 2022</time>
+                        <p class="author">{{ author }}</p>
+                    </div>
+                </header>
+                <section class="post-body">
+                    {{ content | safe }}
+                </section>
+            </div>
+        </main>

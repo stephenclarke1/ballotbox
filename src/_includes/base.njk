@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <script src="/assets/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
+    <title>{{ title }} | Onslow College Music</title>
+</head>
+<body>
+    {% include 'header.njk' %}
+    {{ content | safe }}
+    {% include 'footer.njk' %}
+</body>
+</html>

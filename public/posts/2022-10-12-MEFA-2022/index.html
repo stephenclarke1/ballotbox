@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEFA 2022 | Onslow College Music</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <script src="../assets/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top" class="grid-container">
+        <header class="page-header">
+            <div class="focus-only-link"><a href="#main">Skip to main content</a></div>
+            <a href="../index.html" class="logo">
+                <img src="../assets/images/onslow-logo.png" alt="Onslow College Emblem" class="onslow-emblem">
+                <div class="logo-wordmark">
+                    <span>Onslow College</span>
+                    <span>Music</span>
+                </div>
+            </a>
+            <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                <div class="hamburger" aria-hidden="true"></div>
+                <span>Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav">
+                <ul role="list" class="nav-list">
+                    <li><a href="../index.html" title="Home">Home</a></li>
+                    <li>
+                        <button onclick="myFunction(this)" class="dropdown-button">Curriculum</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
+                            <li><a href="../curriculum/junior-school.html">Junior School</a></li>
+                            <li><a href="../curriculum/senior-school.html">Senior School</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="myFunction(this)" class="dropdown-button">Ensembles</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
+                            <li><a href="../ensembles/choir.html">Choir</a></li>
+                            <li><a href="../ensembles/orchestra.html">Orchestra</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../posts/index.html" title="Posts" class="active-link">Posts</a></li>
+                    <li><a href="../lessons.html" title="Music Lessons">Music Lessons</a></li>
+                    <li><a href="../events.html" title="Events">Events</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero" style="background-image: url('../assets/images/MEFA-2022-featured.jpg');"></section>
+        <main class="content bg-text-light post-content" id="main">
+            <div class="tri" aria-hidden="true"></div>
+            <div class="post-container content-container">
+                <header class="post-header">
+                    <h1 class="headline">MEFA 2022</h1>
+                    <div class="bylines">
+                        <time datetime="2022-10-12T15:10:00NZST">12th October 2022</time>
+                        <p class="author">Stephen</p>
+                    </div>
+                </header>
+                <section class="post-body">
+                    <p>On the morning of the 27th of September, members of the Studio Orchestra piled on to the train, and made their way to Wellington College, for this was the day of the MEFA. After waiting for some time, it was our turn to workshop one of our songs with Dr Robert McWilliams, a musician from Australia. It was a great learning experience, and we were able to iron out some of the creases with the song.</p>
+                    <div class="img-container">
+                        <img width="500px" src="/src/assets/images/MEFA-2022-featured.jpg" alt="A picture of the Studio Orchestra in September 2022.">
+                        <p class="img-caption">Image: Lily Harward-Jones</p>
+                    </div>
+                    <p>After the workshop, there was a bit more waiting, but soon enough, it was time for us to perform. We performed three of our songs that we've been working on this year, Sir Duke by Stevie Wonder, Cool by Leonard Bernstein and American Patrol by Frank Meacham.</p>
+                    <p>All in all, MEFA was a great experience, and I look forward to next year's installment. If you're interested, you can watch the <a href="2022-10-12-MEFA-2022-video.html">archived livestream</a> of the event.</p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer bg-secondary-medium">
+            <div class="tri bg-secondary-medium" aria-hidden="true"></div>
+            <div class="footer-grid-container">
+                <nav>
+                    <ul role="list" class="nav-list">
+                        <li><a href="https://onslow.school.nz" title="Onslow College Website">onslow.school.nz</a></li>
+                        <li><a href="../index.html" title="Home">Home</a></li>
+                        <li><a href="../lessons.html" title="Music Lessons">Music Lessons</a></li>
+                        <li><a href="../events.html" title="Events">Events</a></li>
+                        <li><a href="../src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#top" title="Back to top">Back to top</a></li
+                    </ul>
+                </nav>
+                <div class="small-print">
+                    <p>Morbi ultricies venenatis tellus eleifend <a href="#">Proin</a> a diam, bibendum eu dapibus at, dignissim eu magna. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

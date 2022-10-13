@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Lessons | Onslow College Music</title>
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
+    <script src="/src/assets/scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container" id="top">
+        <header class="page-header">
+            <div class="focus-only-link"><a href="#main">Skip to main content</a></div>
+            <a href="/src/index.html" class="logo">
+                <img src="/src/assets/images/onslow-logo.png" alt="Onslow College Emblem" class="onslow-emblem">
+                <div class="logo-wordmark">
+                    <span>Onslow College</span>
+                    <span>Music</span>
+                </div>
+            </a>
+            <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                <div class="hamburger" aria-hidden="true"></div>
+                <span>Menu</span>
+            </button>
+            <nav id="primaryNav" class="primary-nav">
+                <ul role="list" class="nav-list">
+                    <li><a href="/src/index.html" title="Home">Home</a></li>
+                    <li>
+                        <button onclick="myFunction(this)" class="dropdown-button">Learning and Teaching</button>
+                        <ul  id="myDropdown" class="dropdown-submenu">
+                            <!-- remember to make caret turn upside down after pressed -->
+                            <li><a href="/src/curriculum/junior-school.html">Junior School</a></li>
+                            <li><a href="/src/curriculum/senior-school.html">Senior School</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button onclick="myFunction(this)" class="dropdown-button active-link">Ensembles</button>
+                        <ul id="myDropdown" class="dropdown-submenu">
+                            <li><a class="active-link" href="/src/ensembles/choir.html">Choir</a></li>
+                            <li><a href="/src/ensembles/orchestra.html">Orchestra</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/src/posts/index.html" title="Posts">Posts</a></li>
+                    <li><a href="/src/lessons.html" title="Music Lessons">Music Lessons</a></li>
+                    <li><a href="/src/events.html" title="Events">Events</a></li>
+                    <li><a href="/src/contact.html" title="Contact">Contact</a></li>
+                </ul>
+                <div class="tri-upside-down bg-primary-dark hidden-until-mobile" aria-hidden="true"></div>
+            </nav>
+        </header>
+        <section class="hero" style="background-image: url('/src/assets/images/chamber-choir-featured.png');"></section>
+        <main id="main" class="content">
+                <div class="tri bg-text-light" aria-hidden="true"></div>
+                <div class="post-container content-container">
+                    <header class="post-header">
+                        <h1 class="headline">Music Lessons</h1>
+                    </header>
+                    <section class="post-body">
+                        <p>Onslow College offers lessons for a wide range of instruments, either during school or outside of school hours.</p>
+                        <h3>Music Lessons During School</h3>
+                        <p>We offer tuition on the following instruments; Guitar, Bass & Ukulele, Piano, Drums, Flute, Clarinet & Saxophone, Trumpet & Trombone and Voice. Students can sign up for instruments lessons at the start of the year. Lessons happen during the school day and are 30mins in length.</p>
+                        <h3>Apollo Music</h3>
+                        <p>Apollo Music is an independent company that employs expert tutors in the Wellington Region to tutor children and adults. Their music lessons range from guitar, drums and piano lessons to music production, vocal and songwriting lessons. Onslow College proudly hosts Apollo on site in the music department.</p>
+                        <p>If either a student or an adult wishes to take music lessons after school at Onslow please visit <a target="_blank" href="https://apollomusic.co.nz">Apollo Music</a>.</p>                    
+                    </section>
+                </div>
+        </main>
+        <footer class="footer bg-secondary-medium">
+            <div class="tri bg-secondary-medium" aria-hidden="true"></div>
+            <div class="footer-grid-container">
+                <nav>
+                    <ul role="list" class="nav-list">
+                        <li><a href="https://onslow.school.nz" title="Onslow College Website">onslow.school.nz</a></li>
+                        <li><a href="/" title="Home">Home</a></li>
+                        <li><a href="/src/lessons.html" title="Music Lessons">Music Lessons</a></li>
+                        <li><a href="/src/events.html" title="Events">Events</a></li>
+                        <li><a href="/src/contact.html" title="Contact">Contact</a></li>
+                        <li><a href="/src/privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="#top" title="Back to top">Back to top</a></li>
+                    </ul>
+                </nav>
+                <div class="small-print">
+                    <p><a href="/src/be-featured.html">Apply to have your work featured on this site</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
