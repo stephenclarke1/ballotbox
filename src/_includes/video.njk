@@ -14,7 +14,10 @@ layout: 'base.njk'
                 </header>
                 <section class="post-body">
                     {{ content | safe }}
-                    <video src="{{ video }}"></video>
+                    <video controls>
+                        <source src="{{ video }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </section>
             </div>
         </main>
