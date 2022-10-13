@@ -43,7 +43,7 @@ collections:
             multiple: false
       - { label: "Thumbnail Image", name: "image", widget: "image" }
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
-      # - { label: "Body", name: "body", widget: "markdown", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
 
 
 
