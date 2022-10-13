@@ -35,10 +35,9 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post, video"] }
-      - label: "Video"
+      - label: "Video (.mp4 only)"
         name: "video"
         widget: "file"
-        default: "/uploads/video.mp4"
         media_library:
           config:
             multiple: false
