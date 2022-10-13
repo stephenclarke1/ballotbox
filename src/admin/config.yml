@@ -32,7 +32,13 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post, video"] }
-      - { label: "Video", name: "video", widget: "file", default: "/uploads/video.mp4", media_library: config: multiple: false }
+      - label: "Video"
+        name: "video"
+        widget: "file"
+        default: "/uploads/video.mp4"
+        media_library:
+          config:
+            multiple: false
       - { label: "Thumbnail Image", name: "image", widget: "image" }
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
