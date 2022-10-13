@@ -9,4 +9,3 @@ video: https://www.youtube.com/embed/-oWROqN5e0s
 image: /assets/images/matariki-2022-videothumb.png
 imageAlt: a picture of the studio orchestra playing
 ---
-ok
