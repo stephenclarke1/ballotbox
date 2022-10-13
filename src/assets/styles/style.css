@@ -452,9 +452,9 @@ nav {
     padding: 1.5rem 0;
 }
 
-.post-body img {
+/* .post-body img {
     max-width: 500px;
-}
+} */
 
 .img-container {
     margin: 1rem;
@@ -995,6 +995,11 @@ footer a {
     
 }
 
+@media screen and (min-width: 849px) {
+    .post-body img {
+        max-width: 500px;
+    }
+}
 
 @media screen and (max-width: 849px) {
     .logo .onslow-emblem {
