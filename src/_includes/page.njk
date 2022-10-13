@@ -1,0 +1,15 @@
+---
+layout: 'base.njk'
+---
+<section class="hero" style="background-image: url('{{ image }}');"></section>
+        <main id="main" class="content">
+                <div class="tri bg-text-light" aria-hidden="true"></div>
+                <div class="post-container content-container">
+                    <header class="post-header">
+                        <h1 class="headline">{{ title }}</h1>
+                    </header>
+                    <section class="post-body">
+{{ content | safe }}
+</section>
+</div>
+</main>
