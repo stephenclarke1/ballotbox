@@ -376,6 +376,7 @@ nav {
 .hero-no-image {
     height: 2rem;
     min-height: 2rem;
+    background-color: var(--clr-text-light);
 }
 
 .hero-no-image + main .tri {
