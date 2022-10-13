@@ -452,11 +452,15 @@ nav {
     padding: 1.5rem 0;
 }
 
+.post-body img {
+    max-width: 500px;
+}
+
 .img-container {
     margin: 1rem;
     float: right;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .centre .img-container {
