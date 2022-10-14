@@ -990,7 +990,6 @@ footer a {
 
     .dropdown-button::after {
         position: absolute;
-        top: 0;
     }
 
     .primary-nav li {
