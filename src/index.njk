@@ -12,7 +12,7 @@ layout: 'base.njk'
                             <section class="homepage-about">
                                 <div class="left">
                                     <h1>{{ section.data.title }}</h1>
-                                    {{ section.data.description | safe }}
+                                    <p>{{ section.data.description | safe }}</p>
                                 </div>
                                 <div class="right">
                                     <img src="{{ section.data.image }}" alt="{{ section.data.imageAlt }}">
