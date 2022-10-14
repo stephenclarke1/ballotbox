@@ -30,7 +30,7 @@ layout: 'base.njk'
                         </div>
                         <div class="right">
                             {%- for section in collections.Contact -%}
-                                {%- if section.data.align.includes("left") -%}
+                                {%- if section.data.align.includes("right") -%}
                                     <h3>{{ section.data.title }}</h3>
                                     <p>{{ section.data. description | safe }}</p>
                                 {%- endif -%}
