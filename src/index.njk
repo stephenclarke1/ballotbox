@@ -8,16 +8,16 @@ layout: 'base.njk'
             
                 <div class="tri bg-primary-light" aria-hidden="true"></div>
                 <div class="content-container bg-primary-light">
-                    <section class="homepage-about">
-                        <div class="left">
-                            <h1>About Us</h1>
-                            <p>The Onslow College Music Department is an inclusive, creative & welcoming community. Students have the freedom to explore a variety of different musical instruments and discover themselves through the beauty of music.</p>
-                            <p>We are very fortunate at Onslow to have plenty of space. The department has 14 different rooms we can use for rehearsals, class work, solo practice and itinerant music lessons. We are well equipped to deal with the high volume of students through our department     with Pianos in all but 2 spaces, 3 drum kits and an array of Guitars and percussion. Students are welcome to <a href="/contact/#teachers">book a room</a> for a lunchtime to practice or run a rehearsal or jam.</p>
-
-                        </div>
-                        <div class="right">
-                            <img src="/assets/images/person-teaching.png" alt="A teacher playing piano to a group of students.">
-                        </div>
+                    {%- for section in collections.Homepage  -%}
+                            <section class="homepage-about">
+                                <div class="left">
+                                    <h1>{{ section.data.title }}</h1>
+                                    {{ section.data.test | safe }}
+                                </div>
+                                <div class="right">
+                                    <img src="{{ section.data.image }}" alt="{{ section.data.imageAlt }}">
+                                </div>
+                    {%- endfor -%}
                     </section>
                 </div>
                 <div class="bg-primary-light tri-upside-down" aria-hidden="true"></div>

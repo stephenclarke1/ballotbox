@@ -45,6 +45,17 @@ collections:
       - { label: "Thumbnail Image or screenshot", name: "image", widget: "image" }
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "Homepage"
+    label: "Home Page Sections"
+    folder: "src"
+    create: true
+    slug: "homepage-{{slug}}"
+    layout: 'base.njk'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "description", widget: "markdown" }
 
 
 
