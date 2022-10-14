@@ -1026,6 +1026,29 @@ footer a {
     font-size: 17px;
     }
     
+    
+    
+}
+
+@media screen and (max-width: 855px) {
+    .post-card-container .card {
+        grid-template: "image" "text";
+        gap: 1rem;
+    }
+
+    .post-card-container .card-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .post-card-container .card-date {
+        margin-left: 0;
+    }
+
+    .post-card-container .post-card-text p {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media screen and (min-width: 849px) {
