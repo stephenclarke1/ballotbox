@@ -46,7 +46,7 @@ collections:
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "Pages"
-    label: "Pages"
+    label: "Page"
     folder: "src"
     create: true
     description: This is for simple pages, but ones that don't fit into other sections, like the events page and privacy policy page.
@@ -54,13 +54,12 @@ collections:
     layout: 'page.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "Curriculum"
-    label: "Learning & Teaching Pages"
+    label: "Learning & Teaching Page"
     folder: "src/curriculum"
     create: true
     description: This is for pages that are in the learning & teaching category, like the music lessons page and the curriculum pages.
@@ -68,13 +67,12 @@ collections:
     layout: 'page.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "Homepage"
-    label: "Home Page Sections"
+    label: "Home Page Section"
     folder: "src/homepage-sections"
     create: true
     slug: "{{slug}}"
@@ -85,7 +83,7 @@ collections:
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "description", widget: "markdown" }
   - name: "Contact"
-    label: "Contact Page Sections"
+    label: "Contact Page Section"
     folder: "src/contact-sections"
     create: true
     slug: "{{slug}}"
