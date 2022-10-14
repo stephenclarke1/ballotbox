@@ -29,8 +29,11 @@ layout: 'base.njk'
                             </p>
                         </div>
                         <div class="right">
-                            {%- for section in collections.right  -%}
-                                {{ section.data.content | safe }}
+                            {%- for section in collections.Contact -%}
+                                {%- if section.data.align.includes("left") -%}
+                                    <h3>{{ section.data.title }}</h3>
+                                    <p>{{ section.data. description | safe }}</p>
+                                {%- endif -%}
                             {%- endfor -%}
                             <h3 id="schoolmap">School Map</h3>
                             <p>You can generally find us around MS1 and MS2, behind the hall.</p>
