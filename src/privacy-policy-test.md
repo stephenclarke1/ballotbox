@@ -2,6 +2,7 @@
 title: privacy policy test
 tags: []
 footerText: hello
+layout: 'page.njk'
 ---
 We may collect personal information from you, including information about your:
 
@@ -16,5 +17,5 @@ We keep your information safe by storing it in encrypted places and only allowin
 
 We may use tools from Microsoft and Google on our website. We will always make sure you know when you are using their services.
 
-You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.\
+You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
 If you’d like to ask for a copy of your information, or to have it corrected, please contact us at **[stephen.clarke@student.onslow.school.nz](mailto:stephen.clarke@student.onslow.school.nz)**.
