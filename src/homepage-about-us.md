@@ -8,7 +8,7 @@ description: >-
   instruments and discover themselves through the beauty of music.
 
 
-  <br>
+  <br><br>
 
 
   We are very fortunate at Onslow to have plenty of space. The department has 14 different rooms we can use for rehearsals, class work, solo practice and itinerant music lessons. We are well equipped to deal with the high volume of students through our department with Pianos in all but 2 spaces, 3 drum kits and an array of Guitars and percussion. Students are welcome to <a href="/contact/#teachers">book a room</a> for a lunchtime to practice or run a rehearsal or jam.
