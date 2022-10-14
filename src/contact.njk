@@ -11,12 +11,12 @@ layout: 'base.njk'
                     </header>
                     <section class="post-body two-column">
                         <div class="left">
-                            {%- for section in collections.Contact -%}
-                                {%- if section.data.align.includes("left") -%}
+                            <!-- {%- for section in collections.Contact -%}
+                                {% if section.data.align.includes(left) %}
                                     <h3>{{ section.data.title }}</h3>
-                                    <p>{{ section.data. description | safe }}</p>
-                                {%- endif -%}
-                            {%- endfor -%}
+                                    <p>{{ section.data.tags | safe }}</p>
+                                {% endif %}
+                            {%- endfor -%} -->
                             <p>
                             Our school's main website: <a target="_blank" href="https://onslow.school.nz">onslow.school.nz</a>
                             </p>
@@ -29,12 +29,12 @@ layout: 'base.njk'
                             </p>
                         </div>
                         <div class="right">
-                            {%- for section in collections.Contact -%}
-                                {%- if section.data.align.includes("right") -%}
+                            <!-- {%- for section in collections.Contact -%}
+                                {% if section.data.align.includes(right) %}
                                     <h3>{{ section.data.title }}</h3>
-                                    <p>{{ section.data. description | safe }}</p>
-                                {%- endif -%}
-                            {%- endfor -%}
+                                    <p>{{ section.data.content | safe }}</p>
+                                {% endif %}
+                            {%- endfor -%} -->
                             <h3 id="schoolmap">School Map</h3>
                             <p>You can generally find us around MS1 and MS2, behind the hall.</p>
                             <a href="/assets/images/OC-map.png" title="View a larger version of the map"><img src="/assets/images/OC-map.png" alt="A map of Onslow College"></a>
