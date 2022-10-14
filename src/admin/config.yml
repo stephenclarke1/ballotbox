@@ -45,6 +45,34 @@ collections:
       - { label: "Thumbnail Image or screenshot", name: "image", widget: "image" }
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
+  - name: "Pages"
+    label: "Pages"
+    folder: "src"
+    create: true
+    description: This is for simple pages, but ones that don't fit into other sections, like the events page and privacy policy page.
+    slug: "{{slug}}"
+    layout: 'page.njk'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Curriculum"
+    label: "Learning & Teaching Pages"
+    folder: "src/curriculum"
+    create: true
+    description: This is for pages that are in the learning & teaching category, like the music lessons page and the curriculum pages.
+    slug: "{{slug}}"
+    layout: 'page.njk'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "Homepage"
     label: "Home Page Sections"
     folder: "src/homepage-sections"
@@ -56,19 +84,18 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "description", widget: "markdown" }
-  - name: "Pages"
-    label: "Pages"
-    folder: "src"
-    create: true
-    slug: "{{slug}}"
-    layout: 'page.njk'
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
-      - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Contact"
+      label: "Contact Page Sections"
+      folder: "src/contact-sections"
+      create: true
+      slug: "{{slug}}"
+      layout: 'base.njk'
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Featured Image", name: "image", widget: "image" }
+        - { label: "Image Caption", name: "imageAlt", widget: "string" }
+        - { label: "Body", name: "description", widget: "markdown" }
+    
 
 
 
