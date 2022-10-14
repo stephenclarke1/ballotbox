@@ -56,6 +56,19 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "description", widget: "markdown" }
+  - name: "Pages"
+    label: "Pages"
+    folder: "src"
+    create: true
+    slug: "{{slug}}"
+    layout: 'base.njk'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post, article"] }
+      - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
 
 
 
