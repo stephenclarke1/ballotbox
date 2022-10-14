@@ -85,16 +85,16 @@ collections:
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "description", widget: "markdown" }
   - name: "Contact"
-      label: "Contact Page Sections"
-      folder: "src/contact-sections"
-      create: true
-      slug: "{{slug}}"
-      layout: 'base.njk'
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Featured Image", name: "image", widget: "image" }
-        - { label: "Image Caption", name: "imageAlt", widget: "string" }
-        - { label: "Body", name: "description", widget: "markdown" }
+    label: "Contact Page Sections"
+    folder: "src/contact-sections"
+    create: true
+    slug: "{{slug}}"
+    layout: 'base.njk'
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "description", widget: "markdown" }
     
 
 
