@@ -47,9 +47,9 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
   - name: "Homepage"
     label: "Home Page Sections"
-    folder: "src"
+    folder: "src/homepage-sections"
     create: true
-    slug: "homepage-{{slug}}"
+    slug: "{{slug}}"
     layout: 'base.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
