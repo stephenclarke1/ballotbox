@@ -13,6 +13,7 @@ layout: 'base.njk'
                     </div>
                 </header>
                 <section class="post-body">
+                    {% if video %}
                     <div class="video-container">
                         <div class="video-embed-container">
                             <video class="video-embed" controls>
@@ -21,6 +22,7 @@ layout: 'base.njk'
                             </video>
                         </div>
                     </div>
+                    {% endif %}
                     {{ content | safe }}
                 </section>
             </div>

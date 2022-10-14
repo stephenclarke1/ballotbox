@@ -37,13 +37,14 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post, video"] }
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "string", required: false }
-      - label: "Video (.mp4 only)"
+      - label: "Video (.mp4 only!! If using a youtube video, go to share + embed video and copy into the body section"
         name: "video"
         widget: "file"
+        required: false
         media_library:
           config:
             multiple: false
-      - { label: "Thumbnail Image", name: "image", widget: "image" }
+      - { label: "Thumbnail Image or screenshot", name: "image", widget: "image" }
       - { label: "Thumbnail image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
 
