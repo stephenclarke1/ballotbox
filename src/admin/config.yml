@@ -61,10 +61,10 @@ collections:
     folder: "src"
     create: true
     slug: "{{slug}}"
-    layout: 'base.njk'
+    layout: 'page.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post, article"] }
+      - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
