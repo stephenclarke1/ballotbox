@@ -1001,6 +1001,10 @@ footer a {
         padding: 1rem;
     }
 
+    .primary-nav button {
+        padding: 1rem;
+    }
+
     .primary-nav li:first-child {
         padding: 1rem;
     }
