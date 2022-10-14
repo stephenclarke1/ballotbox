@@ -12,16 +12,9 @@ layout: 'base.njk'
                     <section class="post-body two-column">
                         <div class="left">
                             {%- for section in collections.Contact -%}
-                            <section class="homepage-about">
-                                <div class="left">
-                                    <h1>{{ section.data.title }}</h1>
-                                    <p>{{ section.data.description | safe }}</p>
-                                </div>
-                            {%- endfor -%}
-                            {%- for section in collections.Contact -%}
-                                {%- if section.data.align.includes(left) -%}
+                                {%- if section.data.align.includes("left") -%}
                                     <h3>{{ section.data.title }}</h3>
-                                    {{ section.description | safe }}
+                                    <p>{{ section.data. description | safe }}</p>
                                 {%- endif -%}
                             {%- endfor -%}
                             <p>
