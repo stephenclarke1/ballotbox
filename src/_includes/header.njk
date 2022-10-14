@@ -18,6 +18,9 @@
                 <li>
                     <button onclick="myFunction(this)" class="dropdown-button">Learning and Teaching</button>
                     <ul  id="myDropdown" class="dropdown-submenu">
+                        {%- for page in collections.Curriculum -%}
+                            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                        {%- endfor -%}
                         <!-- remember to make caret turn upside down after pressed -->
                         <li><a href="/curriculum/junior-school/">Junior School</a></li>
                         <li><a href="/curriculum/senior-school/">Senior School</a></li>
@@ -27,6 +30,9 @@
                 <li>
                     <button onclick="myFunction(this)" class="dropdown-button">Ensembles</button>
                     <ul  id="myDropdown" class="dropdown-submenu">
+                        {%- for page in collections.Ensembles -%}
+                            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                        {%- endfor -%}
                         <li><a href="/ensembles/choir/">Choir</a></li>
                         <li><a href="/ensembles/orchestra/">Orchestra</a></li>
                     </ul>
