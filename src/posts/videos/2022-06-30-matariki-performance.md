@@ -1,7 +1,7 @@
 ---
 title: Matariki Performance
 author: Stephen Clarke
-description: "**hello world**"
+description: ""
 date: 2022-06-29T12:00:00.000Z
 video: null
 image: /assets/images/matariki-2022-videothumb.png
