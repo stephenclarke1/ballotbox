@@ -600,6 +600,43 @@ form p {
     text-align: center;
 }
 
+.post-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-card-container .card:last-child {
+    padding-bottom: 0;
+}
+
+.post-card-container .card {
+    background-color: var(--clr-text-light);
+    display: grid;
+    grid-template:
+    "text . image" / 5fr 1fr 5fr;
+}
+
+.post-card-container a {
+    text-decoration: none;
+}
+
+.post-card-container .card-title {
+    font-size: 1.5rem;
+}
+
+.post-card-container .card img {
+    grid-area: image;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    max-width: none;
+}
+
+.post-card-text {
+    grid-area: text;
+}
+
 .card-container {
     grid-area: card;
     display: flex;
@@ -721,13 +758,8 @@ a:hover .card-title, a:focus-visible .card-title {
 
 footer {
     grid-area: footer;
-    /* position: fixed;
-    bottom: 0;
-    width: 100vw;
-    right: 0; */
     color: var(--clr-text-light);
     padding-bottom: 1.6rem;
-    /* margin-top: var(--triangle-height); */
 }
 
 .footer-grid-container {

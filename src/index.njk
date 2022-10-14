@@ -25,56 +25,34 @@ layout: 'base.njk'
                     <section id="news" class="featured-cards">
                         <h1>Latest News</h1>
                         <div class="card-container">
-                            <a href="/posts/2022-10-12-MEFA-2022/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/MEFA-2022-featured.jpg" alt="A picture of the Studio Orchestra in September 2022">
-                                    <h2 class="card-title">MEFA 2022</h2>
-                                    <span class="card-date">12th October 2022</span>
-                                    <p>On the morning of the 27th of September, members of the Studio Orchestra piled on to the train, and made their way to Wellington College, for this was the day of the MEFA...<p>
-                                </section>
-                            </a>
-                            <a href="/posts/2022-06-30-matariki-2022/">
-                                <section class="card bg-secondary-light">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/M45_Pleiades_Pbkwee.jpg" alt="The constellation of Matariki">
-                                    <h2 class="card-title">Matariki 2022</h2>
-                                    <span class="card-date">30th June 2022</span>
-                                    <p>To celebrate Matariki, the Arts department recently held a concert. The studio orchestra, as well as the two choirs performed, along with a plethora of student performances...</p>
-                                </section>
-                            </a>
-                            <a href="/posts/2022-06-14-big-sing-2022/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/Big-Sing-2022.jpg" alt="The Onslow College Orchestra pictured in front of the Sydney Opera House">
-                                    <h2 class="card-title">The Big Sing</h2>
-                                    <span class="card-date">14th June 2022</span>
-                                    <p>Onslow’s Big Sing Choir proudly performed in The Big Sing at the Michael Fowler Centre on the 9th of June 2022. Despite the wonderfully wet Wellington weather, and a brief...</p>
-                                </section>
-                            </a>
+                            {%- for post in collections.article | reverse -%}
+                                {%- if loop.index0 < 3 %}
+                                    <a href="{{ post.url }}">
+                                        <section class="card bg-secondary-light">
+                                            <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+                                            <h2 class="card-title">{{ post.data.title }}</h2>
+                                            <span class="card-date">{{ post.data.date | postDate }}</span>
+                                            <p>{{ post.data.description }}</p>
+                                        </section>
+                                    </a>
+                                {%- endif %}
+                            {%- endfor -%}
                         </div>
                     </section>
                     <section id="videos" class="featured-cards">
                         <h1>Latest Videos</h1>
                         <div class="card-container">
-                            <a href="/posts/2022-10-12-MEFA-2022-video/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/MEFA-2022-videothumb.jpg" alt="The logo of the MEFA.">
-                                    <h2 class="card-title">MEFA 2022</h2>
-                                    <span class="card-date">12th October 2022</span>
-                                </section>
-                            </a>
-                            <a href="/posts/2022-06-30-matariki-performance/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/matariki-2022-videothumb.png" alt="The Onslow Orchestra performing in the onslow hall during a matariki performance">
-                                    <h2 class="card-title">Matariki Performance</h2>
-                                    <span class="card-date">30th June 2022</span>
-                                </section>
-                            </a>
-                            <a href="https://google.com">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/boyschoir-videothumb.png" alt="A boys' choir performing on stage">
-                                    <h2 class="card-title">Choir</h2>
-                                    <span class="card-date">15th June 2022</span>
-                                </section>
-                            </a>
+                            {%- for post in collections.video | reverse -%}
+                                {%- if loop.index0 < 3 %}
+                                    <a href="{{ post.url }}">
+                                        <section class="card bg-secondary-light">
+                                            <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+                                            <h2 class="card-title">{{ post.data.title }}</h2>
+                                            <span class="card-date">{{ post.data.date | postDate }}</span>
+                                        </section>
+                                    </a>
+                                {%- endif %}
+                            {%- endfor -%}
                         </div>
                     </section>
                     <section id="curriculum" class="featured-cards link-cards">
