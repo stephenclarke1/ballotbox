@@ -9,4 +9,4 @@ video:
 image: /assets/images/matariki-2022-videothumb.png
 imageAlt: a picture of the studio orchestra playing
 ---
-This is the vid peeps!
+Here is a video of the studio orchestra playing Sir Duke by Stevie Wonder at the school's matariki performance. Enjoy!
