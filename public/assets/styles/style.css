@@ -55,7 +55,7 @@ body {
     "header header header" var(--page-header-height)
     "hero hero hero"
     "content content content"  
-    "footer footer footer";
+    "footer footer footer" min-content;
 }
 
 p {
@@ -376,6 +376,7 @@ nav {
 .hero-no-image {
     height: 2rem;
     min-height: 2rem;
+    background-color: var(--clr-text-light);
 }
 
 .hero-no-image + main .tri {
@@ -452,11 +453,15 @@ nav {
     padding: 1.5rem 0;
 }
 
+/* .post-body img {
+    max-width: 500px;
+} */
+
 .img-container {
     margin: 1rem;
     float: right;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .centre .img-container {
@@ -991,6 +996,11 @@ footer a {
     
 }
 
+@media screen and (min-width: 849px) {
+    .post-body img {
+        max-width: 500px;
+    }
+}
 
 @media screen and (max-width: 849px) {
     .logo .onslow-emblem {
