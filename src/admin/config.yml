@@ -46,7 +46,7 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
   - name: "Pages"
-    label: "Page"
+    label: "General Page"
     folder: "src"
     create: true
     description: This is for simple pages, but ones that don't fit into other sections, like the events page and privacy policy page.
