@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
-footerText: hello
-layout: 'page.njk'
+layout: page.njk
+footerText: ❤️
 ---
 We may collect personal information from you, including information about your:
 
