@@ -534,6 +534,43 @@ form p {
     height: 100%;
 }
 
+.calendar {
+    font-family: var(--ff-body);
+}
+
+.calendar a {
+    text-decoration: none;
+}
+
+.calendar .fc-header-toolbar {
+    flex-wrap: wrap;
+}
+
+.calendar .fc-button {
+    background-color: var(--clr-primary-dark) !important;
+    color: var(--clr-text-light) !important;
+    border: none !important;
+}
+
+.calendar .fc-button-active {
+    background: var(--clr-text-light) !important;
+    color: var(--clr-primary-dark) !important;
+    border-color: var(--clr-primary-dark) !important;
+    border: 1px solid var(--clr-primary-dark) !important;
+}
+
+.calendar .fc-button:hover {
+    background-color: var(--clr-text-light) !important;
+    color: var(--clr-primary-dark) !important;
+}
+
+.calendar .fc-button:focus {
+    box-shadow: none !important;
+    outline: 3px solid var(--clr-text-dark) !important;
+    background-color: var(--clr-text-light) !important;
+    color: var(--clr-primary-dark) !important;
+}
+
 .map-container {
     aspect-ratio: 1/1;
     width: calc(100vw - (var(--page-side-padding * 4)));
