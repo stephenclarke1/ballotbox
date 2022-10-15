@@ -92,8 +92,6 @@ collections:
     layout: 'base.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Alignment", name: "align", widget: "select", options: ["left", "right"]}
       - { label: "Body", name: "description", widget: "markdown" }
     

@@ -13,7 +13,7 @@ layout: 'base.njk'
                         <div class="left">
                             {%- for section in collections.Contact -%}
                                 {% if section.data.align.includes("left") %}
-                                    <h3>{{ section.data.title }}</h3>
+                                    <h3 id="{{ section.data.title }}">{{ section.data.title }}</h3>
                                     <p>{{ section.data.description }}</p>
                                 {% endif %}
                             {%- endfor -%}
@@ -31,7 +31,7 @@ layout: 'base.njk'
                         <div class="right">
                             {%- for section in collections.Contact -%}
                                 {% if section.data.align.includes("right") %}
-                                    <h3>{{ section.data.title }}</h3>
+                                    <h3 id="{{ section.data.title }}"">{{ section.data.title }}</h3>
                                     <p>{{ section.data.description }}</p>
                                 {% endif %}
                             {%- endfor -%}
