@@ -1,6 +1,5 @@
 ---
-title: privacy policy test
-tags: []
+title: Privacy Policy
 footerText: hello
 layout: 'page.njk'
 ---
