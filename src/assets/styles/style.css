@@ -1149,11 +1149,11 @@ footer a {
     }
 
     .calendar .fc .fc-toolbar {
-        display: grid;
+        display: grid !important;
         grid-template:
         "calendar-title calendar-title"
         "calendar-week-select calendar-type-select"
-        ;
+        !important;
     }
 
     .calendar .fc-toolbar-chunk:nth-of-type(1) {
