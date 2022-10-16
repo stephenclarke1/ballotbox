@@ -551,6 +551,10 @@ form p {
     color: var(--clr-text-light) !important;
 }
 
+.calendar .fc-daygrid-event-dot {
+    border-color: var(--clr-secondary-dark) !important;
+}
+
 .calendar .fc-header-toolbar {
     flex-wrap: wrap;
 }
@@ -1148,7 +1152,7 @@ footer a {
         max-height: 400px;
     }
 
-    .calendar .fc .fc-toolbar {
+    .calendar .fc-toolbar {
         display: grid !important;
         grid-template:
         "calendar-title calendar-title"
