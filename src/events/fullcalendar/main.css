@@ -1510,7 +1510,7 @@ A VERTICAL event
       grid-area: calendar-title;
   }
 
-  .calendar .fc-toolbar-chunk:nth-of-type(2) {
+  .calendar .fc-toolbar-chunk:nth-of-type(3) {
       grid-area: calendar-type-select;
   }
 }
