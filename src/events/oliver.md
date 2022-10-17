@@ -7,4 +7,4 @@ textBeforeDate: >-
 ---
 Rehearsals start up in early February next year. All rehearsals can be found in the <a href="/events/">events calendar </a>. See you then!
 
-<a class="cta-button greyed-out" href="" target="_blank">Get your tickets</a>
+<a class="cta-button greyed-out" href="/events" target="_blank">Get your tickets</a>
