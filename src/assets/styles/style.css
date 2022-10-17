@@ -816,6 +816,8 @@ footer {
     grid-area: footer;
     color: var(--clr-text-light);
     padding-bottom: 1.6rem;
+    --clr-bg-dropdown-submenu: var(--clr-text-light);
+    --clr-text-dropdown-submenu: var(--clr-secondary-dark);
 }
 
 .footer-grid-container {

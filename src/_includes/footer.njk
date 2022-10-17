@@ -5,18 +5,16 @@
             <ul role="list" class="nav-list">
                 <li><a href="https://onslow.school.nz" title="Onslow College Website">onslow.school.nz</a></li>
                 <li><a href="/" title="Home">Home</a></li>
-                <li>
-                    <button onclick="myFunction(this)" class="dropdown-button">Learning and Teaching</button>
-                    <ul  id="myDropdown" class="dropdown-submenu">
-                        {%- for page in collections.Curriculum -%}
-                            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-                        {%- endfor -%}
-                        <!-- remember to make caret turn upside down after pressed -->
-                        <li><a href="/curriculum/junior-school/">Junior School</a></li>
-                        <li><a href="/curriculum/senior-school/">Senior School</a></li>
-                    </ul>
-                </li>
-                <li><a href="/curriculum/lessons/" title="Music Lessons">Music Lessons</a></li>
+                {%- for page in collections.Curriculum -%}
+                    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                {%- endfor -%}
+                <!-- remember to make caret turn upside down after pressed -->
+                <li><a href="/curriculum/junior-school/">Junior School</a></li>
+                <li><a href="/curriculum/senior-school/">Senior School</a></li>
+                {%- for page in collections.Ensembles -%}
+                    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                {%- endfor -%}
+                <li><a href="/posts/" title="Posts">Posts</a></li>
                 <li><a href="/events/" title="Events">Events</a></li>
                 <li><a href="/contact/" title="Contact">Contact</a></li>
                 <li><a href="/privacy-policy/">Privacy Policy</a></li>
