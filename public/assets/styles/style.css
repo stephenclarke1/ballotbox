@@ -584,6 +584,12 @@ form p {
     color: var(--clr-primary-dark) !important;
 }
 
+.calendar .fc-event-title,
+.calendar .fc-event-time {
+    padding: 0 1px;
+    white-space: normal;
+}
+
 .map-container {
     aspect-ratio: 1/1;
     width: calc(100vw - (var(--page-side-padding * 4)));

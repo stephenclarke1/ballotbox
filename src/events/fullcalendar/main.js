@@ -12993,18 +12993,22 @@ var FullCalendar = (function (exports) {
             dayGrid: {
                 component: DayTableView,
                 dateProfileGeneratorClass: TableDateProfileGenerator,
+                displayEventEnd: true,
             },
             dayGridDay: {
                 type: 'dayGrid',
                 duration: { days: 1 },
+                displayEventEnd: true,
             },
             dayGridWeek: {
                 type: 'dayGrid',
                 duration: { weeks: 1 },
+                displayEventEnd: true,
             },
             dayGridMonth: {
                 type: 'dayGrid',
                 duration: { months: 1 },
+                displayEventEnd: true,
                 monthMode: true,
                 fixedWeekCount: true,
             },
