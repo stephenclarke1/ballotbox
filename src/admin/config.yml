@@ -98,8 +98,8 @@ collections:
     layout: 'page.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Start Date", name: "startDate", widget: "datetime", required: false }
-      - { label: "End Date", name: "endDate", widget: "datetime" }
+      - { label: "Start Date", name: "startDate", widget: "datetime" }
+      - { label: "End Date", name: "endDate", widget: "datetime", required: false }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
