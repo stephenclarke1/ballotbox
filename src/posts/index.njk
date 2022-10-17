@@ -17,9 +17,11 @@ layout: 'base.njk'
                             <a href="{{ post.url }}">
                                 <section class="card card-full-width">
                                     <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-                                    <div class="post-card-text"><h2 class="card-title">{{ post.data.title }}</h2>
+                                    <div class="post-card-text">
+                                        <h2 class="card-title">{{ post.data.title }}</h2>
                                         <span class="card-date">{{ post.data.date | postDate }}</span>
                                         <p>{{ post.data.description }}</p>
+                                        <!-- <a href="{{ post.url }}" class="cta-button">Read more</a> -->
                                     </div>
                                 </section>
                             </a>
