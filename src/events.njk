@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,'
       },
       events: [
         {
@@ -52,8 +52,48 @@ document.addEventListener('DOMContentLoaded', function() {
           endRecur: '2022-11-04'
         },
         {
+          groupId: 'Oliver Rehearsal', // recurrent events in this group move together
+          daysOfWeek: [ '2', '4' ],
+          startTime: '15:30:00',
+          endTime: '18:00:00',
+          title: 'Oliver Rehearsal',
+          url: '/events/oliver',
+          startRecur: '2023-02-05',
+          endRecur: '2023-03-25'
+        },
+        {
           title: 'Oliver Performance Week',
+          start: '2023-03-26',
+          end: '2023-04-02',
+          url: '/events/oliver'
+        },
+        {
+          title: 'Oliver EOTC Day',
+          start: '2023-03-20',
+          end: '2023-03-21',
+          url: '/events/oliver'
+        },
+        {
+          title: 'Oliver Performance 1',
           start: '2023-03-29',
+          end: '2023-03-30',
+          url: '/events/oliver'
+        },
+        {
+          title: 'Oliver Performance 2',
+          start: '2023-03-30',
+          end: '2023-03-31',
+          url: '/events/oliver'
+        },
+        {
+          title: 'Oliver Performance 3',
+          start: '2023-03-31',
+          end: '2023-04-01',
+          url: '/events/oliver'
+        },
+        {
+          title: 'Oliver Performance 4',
+          start: '2023-04-01',
           end: '2023-04-02',
           url: '/events/oliver'
         },
