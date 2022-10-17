@@ -1,3 +1,4 @@
 {
+    "tags": "event",
     "layout": "event.njk"
 }

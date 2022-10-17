@@ -90,21 +90,20 @@ collections:
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Tags (Don't change)", name: "tags", widget: "list", default: ["Ensembles"] }
   - name: "Events"
-    label: "Calandar Events"
+    label: "Calandar Event"
     folder: "src/events"
     create: true
-    description: This is for pages that are in the ensembles category, like the choir and orchestra pages.
-    slug: "{{day}}-{{month}}-{{year}}-{{slug}}"
+    description: This is for calendar events.
+    slug: "{{slug}}"
     layout: 'page.njk'
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Start Date", name: "startDate", widget: "datetime", required: false }
+      - { label: "End Date", name: "endDate", widget: "datetime" }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "SELECT ONE", name: "layout", widget: "select", options: ['page.njk', 'page.njk']}
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
-      - { label: "Tags (Don't change)", name: "tags", widget: "list", default: ["Events"] }
   - name: "Homepage"
     label: "Home Page Section"
     folder: "src/homepage-sections"
