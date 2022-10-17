@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
-      initialDate: '2022-08-07',
+      timeZone: 'Pacific/Auckland',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
@@ -32,48 +32,35 @@ document.addEventListener('DOMContentLoaded', function() {
           start: '2022-08-01'
         },
         {
-          title: 'Long Event',
-          start: '2022-08-07',
-          end: '2022-08-10'
-        },
-        {
-          groupId: '999',
+          groupId: 'Orchestra', // recurrent events in this group move together
+          daysOfWeek: [ '4' ],
+          startTime: '15:30:00',
+          endTime: '16:35:00',
           title: 'Studio Orchestra',
           url: '/ensembles/orchestra',
-          start: '2022-08-11T15:30:00'
+          startRecur: '2022-10-17',
+          endRecur: '2022-11-04'
         },
         {
-          groupId: '999',
-          title: 'Studio Orchestra',
-          url: '/ensembles/orchestra',
-          start: '2022-08-18T15:30:00'
+          groupId: 'Choir', // recurrent events in this group move together
+          daysOfWeek: [ '1' ],
+          startTime: '13:15:00',
+          endTime: '14:10:00',
+          title: 'Choir',
+          url: '/ensembles/choir',
+          startRecur: '2022-10-17',
+          endRecur: '2022-11-04'
         },
         {
-          title: 'Conference',
-          start: '2022-08-11',
-          end: '2022-08-13'
+          title: 'Oliver Performance Week',
+          start: '2023-03-29',
+          end: '2023-04-02',
+          url: '/events/oliver'
         },
         {
-          title: 'Meeting',
-          start: '2022-08-12T10:30:00',
-          end: '2022-08-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2022-08-12T12:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2022-08-12T14:30:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2022-08-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2022-08-28'
+          title: 'Music Camp',
+          start: '2023-02-15',
+          end: '2023-02-18'
         }
       ]
     });
@@ -82,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
     </script>
-    <title>Events Test | Onslow College Music</title>
+    <title>Events | Onslow College Music</title>
 </head>
 <body>
     {% include 'header.njk' %}
