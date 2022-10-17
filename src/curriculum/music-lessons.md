@@ -1,6 +1,6 @@
 ---
 title: Music Lessons
-image: /assets/images/violin-featured.png
+image: /assets/media/violin-featured.png
 imageAlt: A student playing violin
 layout: page.njk
 tags:

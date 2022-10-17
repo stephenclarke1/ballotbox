@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/assets/images"
-public_folder: "/assets/images"
-logo_url: "/assets/images/onslow-logo.png"
+media_folder: "public/assets/media"
+public_folder: "/assets/media"
+logo_url: "/assets/media/onslow-logo.png"
 
 collections:
   - name: "Article"

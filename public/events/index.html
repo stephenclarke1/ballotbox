@@ -18,10 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
       timeZone: 'Pacific/Auckland',
+      height: 'auto',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,'
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
       },
       events: [
         {

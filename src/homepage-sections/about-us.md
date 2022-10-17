@@ -1,6 +1,6 @@
 ---
 title: About Us
-image: /assets/images/sfrq-2022-videothumb.png
+image: /assets/media/sfrq-2022-videothumb.png
 imageAlt: Students at SmokeFree Rockquest
 description: >-
   The Onslow College Music Department is an inclusive, creative & welcoming
