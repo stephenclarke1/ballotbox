@@ -12,7 +12,7 @@ layout: 'base.njk'
                 <section class="post-body">
                     <div class="post-card-container">
 
-                        {%- for post in collections.article | reverse -%}
+                        {%- for post in collections.post | reverse -%}
 
                             <a href="{{ post.url }}">
                                 <section class="card card-full-width">
