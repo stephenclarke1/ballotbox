@@ -13,7 +13,7 @@ layout: 'base.njk'
                         <h1 class="headline">{{ title }}</h1>
                         <div class="bylines">
                             {% if endDate %}
-                            <p>{{ textBeforeDate }} {{ startDate | postDate }} - {{ endDate | postDate }}</p>
+                            <p>{{ textBeforeDate | safe }} {{ startDate | postDate }} - {{ endDate | postDate }}</p>
                             {% else %}
                             <p>{{ textBeforeDate }} {{ startDate | postDate }}</p>
                             {% endif %}
