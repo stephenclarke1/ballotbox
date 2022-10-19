@@ -1147,19 +1147,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 641px) {
-    .tri::after {
-        clip-path: polygon(0 0, 0 2rem, 39rem 0px);
-    }
-
-    .hero {
-        max-height: 200px;
-    }
-
-    .hero-homepage {
-        max-height: 400px;
-    }
-
+@media screen and (max-width: 685px) {
     .calendar .fc-toolbar {
         display: grid !important;
         grid-template:
@@ -1178,6 +1166,20 @@ footer a {
 
     .calendar .fc-toolbar-chunk:nth-of-type(2) {
         grid-area: calendar-type-select;
+    }
+}
+
+@media screen and (max-width: 641px) {
+    .tri::after {
+        clip-path: polygon(0 0, 0 2rem, 39rem 0px);
+    }
+
+    .hero {
+        max-height: 200px;
+    }
+
+    .hero-homepage {
+        max-height: 400px;
     }
 }
 
