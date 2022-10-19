@@ -9,8 +9,8 @@ layout: 'base.njk'
                 <header class="post-header">
                     <h1 class="headline">{{ title }}</h1>
                     <div class="bylines">
-                        <p>{{ date }}</p>
-                        <p class="author">{{ author }}</p>
+                        <p>{{ date | postDate }}</p>
+                        <p>By {{ author }}  in <a href="/posts/articles">Articles</a></p>
                     </div>
                 </header>
                 <section class="post-body">

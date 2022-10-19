@@ -445,8 +445,8 @@ nav {
 
 } */
 
-.author {
-    padding: 0;
+.bylines p {
+    padding: .1rem 0;
 }
 
 .post-body {
