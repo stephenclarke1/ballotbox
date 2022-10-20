@@ -402,7 +402,7 @@ nav {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    background: none;
+    background: none !important;
     /* margin: 0;
     position: relative;
     transform: rotate(180deg); */
