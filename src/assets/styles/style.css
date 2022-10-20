@@ -386,6 +386,7 @@ nav {
 .content {
     grid-area: content;
     padding-bottom: var(--triangle-height);
+    position: relative;
 }
 
 .content-container > * {
@@ -401,6 +402,7 @@ nav {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    background: none;
     /* margin: 0;
     position: relative;
     transform: rotate(180deg); */
