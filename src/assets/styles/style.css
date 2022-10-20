@@ -15,7 +15,7 @@
     --clr-text-dark: #000;
 
     --page-header-height: 86.5px;
-    --triangle-height: 100px;
+    --triangle-height: 30px;
 
     --ff-primary: 'Raleway', sans-serif;
     --ff-secondary: 'Work Sans', sans-serif;
@@ -394,12 +394,17 @@ nav {
 }
 
 .tri {
-    margin: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 100vw;
+    border-color: transparent transparent #007bff transparent;
+    /* margin: 0;
     position: relative;
-    transform: rotate(180deg);
+    transform: rotate(180deg); */
 }
 
-.tri::after {
+/* .tri::after {
     clip-path: polygon(0 0, 0 5.5rem, 120rem 0px);
     background-color: var(--clr-triangle);
     content: '';
@@ -407,7 +412,7 @@ nav {
     position: absolute;
     top: 100%;
     width: 100%;
-}
+} */
 
 .tri-upside-down {
     margin: 0;
@@ -874,9 +879,9 @@ footer a {
 }
 
 @media screen and (min-width: 1931px) {
-    :root {
-        --triangle-height: 100px;
-    }    
+    /* :root {
+        --triangle-height: 0px;
+    }     */
 
     .hero-no-image {
         height: 4rem;
@@ -990,9 +995,9 @@ footer a {
 
 @media screen and (max-width: 1158px) {
 
-    :root {
+    /* :root {
         --triangle-height: 100px;
-    }
+    } */
 
     .grid-container {
         display: grid;
