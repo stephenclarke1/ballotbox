@@ -35,6 +35,7 @@ html {
     font-family: var(--ff-body);
     scroll-behavior: smooth;
     font-size: 17px;
+    overflow-x: hidden;
 }
 
 .icon::before {
@@ -418,6 +419,7 @@ nav {
     height: 64px;
     transform: rotateY(180deg);
     overflow: hidden;
+    width: calc(100% + 1.3px);
 }
 
 .tri .shape-fill {
@@ -660,6 +662,14 @@ form p {
 
 .tri-upside-down + .content-container {
     padding-top: calc(var(--triangle-height) + 1rem);
+}
+
+.tri + section {
+    margin-top: -64px;
+}
+
+.tri + .footer-grid-container {
+    margin-top: -64px;
 }
 
 .featured-cards {
