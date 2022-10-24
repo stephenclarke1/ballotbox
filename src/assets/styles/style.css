@@ -430,6 +430,8 @@ nav {
     margin: 0;
     position: relative;
     transform: rotate(180deg);
+    transform: none;
+    top: 0;
 }
 
 .post-container {
@@ -645,6 +647,10 @@ form p {
 .tri + section {
     margin-top: calc(var(--triangle-height) * -1);
 }
+
+.tri-upside-down + section {
+    margin-top: 0 !important;
+  }
 
 .tri + .footer-grid-container {
     margin-top: calc(var(--triangle-height) * -1);
