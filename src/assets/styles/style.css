@@ -406,7 +406,7 @@ nav {
     background: none !important;
     position: relative;
     margin: 0;
-    max-width: 100vw;
+    max-width: 100vw !important;
     /* margin: 0;
     position: relative;
     transform: rotate(180deg); */
