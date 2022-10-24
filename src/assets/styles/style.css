@@ -644,11 +644,11 @@ form p {
     padding-top: calc(var(--triangle-height) + 1rem);
 }
 
-.tri + section {
+.tri + * {
     margin-top: calc(var(--triangle-height) * -1);
 }
 
-.tri-upside-down + section {
+.tri-upside-down + * {
     margin-top: 0 !important;
   }
 
