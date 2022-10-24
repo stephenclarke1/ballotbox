@@ -426,32 +426,10 @@ nav {
     fill: var(--clr-triangle);
 }
 
-/* .tri::after {
-    clip-path: polygon(0 0, 0 5.5rem, 120rem 0px);
-    background-color: var(--clr-triangle);
-    content: '';
-    height: var(--triangle-height);
-    position: absolute;
-    top: 100%;
-    width: 100%;
-} */
-
 .tri-upside-down {
     margin: 0;
     position: relative;
     transform: rotate(180deg);
-}
-
-.tri-upside-down::after {
-    transform: rotateX(180deg) rotateY(180deg);
-    clip-path: polygon(0 0, 0 5.5rem, 120rem 0px);
-    background-color: var(--clr-triangle);
-    margin-top: calc(var(--triangle-height) * -1);
-    content: '';
-    height: var(--triangle-height);
-    width: 100%;
-    top: 100%;
-    position: absolute;
 }
 
 .post-container {
