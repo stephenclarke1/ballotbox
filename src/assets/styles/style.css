@@ -15,7 +15,7 @@
     --clr-text-dark: #000;
 
     --page-header-height: 86.5px;
-    --triangle-height: 30px;
+    --triangle-height: min(11vw, 200px);
 
     --ff-primary: 'Raleway', sans-serif;
     --ff-secondary: 'Work Sans', sans-serif;
@@ -397,7 +397,7 @@ nav {
 
 .tri {
     position: absolute;
-    top: -64px;
+    top: calc(var(--triangle-height) * -1);
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -416,7 +416,7 @@ nav {
     position: relative;
     display: block;
     width: 100vw;
-    height: 64px;
+    height: var(--triangle-height);
     transform: rotateY(180deg);
     overflow: hidden;
     width: calc(100% + 1.3px);
@@ -665,11 +665,11 @@ form p {
 }
 
 .tri + section {
-    margin-top: -64px;
+    margin-top: calc(var(--triangle-height) * -1);
 }
 
 .tri + .footer-grid-container {
-    margin-top: -64px;
+    margin-top: calc(var(--triangle-height) * -1);
 }
 
 .featured-cards {
