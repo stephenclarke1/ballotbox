@@ -397,7 +397,7 @@ nav {
 
 .tri {
     position: absolute;
-    top: calc(var(--triangle-height) * -1);
+    top: calc((var(--triangle-height) * -1) + 2px);
     left: 0;
     width: 100%;
     overflow: hidden;
