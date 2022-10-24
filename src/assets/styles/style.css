@@ -656,6 +656,10 @@ form p {
     margin-top: calc(var(--triangle-height) * -1);
 }
 
+.hero-no-image + main .content-container {
+    margin-top: 0 !important;
+}
+
 .featured-cards {
     padding: 1rem var(--page-side-padding);
     display: grid;
