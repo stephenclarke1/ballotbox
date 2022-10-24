@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
+      initialView: 'listMonth',
       timeZone: 'Pacific/Auckland',
       height: 'auto',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
       },
       events: [
         {
