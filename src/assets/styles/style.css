@@ -814,8 +814,8 @@ a:hover .card-title, a:focus-visible .card-title {
 }
 
 .bg-secondary-medium {
-    background-color: var(--clr-secondary-medium);
-    --clr-triangle: var(--clr-secondary-medium);
+    background-color: var(--clr-secondary-dark);
+    --clr-triangle: var(--clr-secondary-dark);
 }
 
 .bg-secondary-light {
