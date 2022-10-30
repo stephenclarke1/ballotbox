@@ -342,6 +342,7 @@ nav {
     width: max-content;
     justify-content: center;
     background-color: var(--clr-bg-dropdown-submenu);
+    z-index: 2;
 }
 
 .dropdown-submenu li {
@@ -1091,7 +1092,6 @@ footer a {
 
     .dropdown-submenu {
         position: relative;
-        z-index: 20000000;
     }
 
     .mobile-menu-open {
