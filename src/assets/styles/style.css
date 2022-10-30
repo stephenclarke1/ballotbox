@@ -1091,6 +1091,7 @@ footer a {
 
     .dropdown-submenu {
         position: relative;
+        z-index: 20000000;
     }
 
     .mobile-menu-open {
