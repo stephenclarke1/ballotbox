@@ -19,10 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
+      // what the calendar opens on
       initialView: 'listMonth',
+      // default time zone 
       timeZone: 'Pacific/Auckland',
+      // making sure day starts on monday
       firstDay: 1,
       height: 'auto',
+      // what the nav looks like
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
@@ -173,7 +177,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <body>
     {% include 'header.njk' %}
     <section class="hero" style="background-image: url('/assets/images/2014-australia-jumping.jpg');"></section>
-    <!-- <section class="hero hero-no-image"></section> -->
         <main id="main" class="content">
                 <div class="tri bg-text-light">
                   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
