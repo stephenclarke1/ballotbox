@@ -71,7 +71,6 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "SELECT ONE", name: "layout", widget: "select", options: ['page.njk', 'page.njk']}
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Tags (Don't change)", name: "tags", widget: "list", default: ["Curriculum"] }
   - name: "Ensembles"
@@ -86,7 +85,6 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image", required: false }
       - { label: "Image Caption", name: "imageAlt", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "SELECT ONE", name: "layout", widget: "select", options: ['page.njk', 'page.njk']}
       - { label: "Footer text (could be image credit)", name: "footerText", widget: "markdown", required: false }
       - { label: "Tags (Don't change)", name: "tags", widget: "list", default: ["Ensembles"] }
   - name: "Events"
