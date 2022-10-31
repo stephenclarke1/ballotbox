@@ -529,6 +529,12 @@ form p {
     position: relative;
 }
 
+.post-body table,
+.post-body td,
+.post-body th {
+    border: 1px solid;
+  }
+
 .video-embed {
     position: absolute;
     top: 0;
