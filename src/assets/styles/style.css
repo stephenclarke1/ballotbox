@@ -529,11 +529,25 @@ form p {
     position: relative;
 }
 
+.post-body table {
+    border-collapse: collapse;
+}
+
+.post-body th,
+.post-body td {
+    padding-left: .6rem;
+    padding-right: .6rem;
+}
+
 .post-body table,
 .post-body td,
 .post-body th {
     border: 1px solid;
   }
+
+.post-body th {
+    text-align: left;
+}
 
 .video-embed {
     position: absolute;
