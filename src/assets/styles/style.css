@@ -508,10 +508,6 @@ nav {
     padding: 1rem;
 }
 
-.cta-button:focus-visible {
-    outline: 3px solid var(--clr-text-light);
-}
-
 form p {
     padding: 0;
 }
