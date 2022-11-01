@@ -1,5 +1,5 @@
 ---
-title: Ngā Manu Tioriori - Onslow College Choir
+title: Ngā Manu Tioriori -Onslow College Choir
 image: /assets/images/2014-australia-choir.jpg
 layout: page.njk
 tags: Ensembles
