@@ -1,7 +1,7 @@
 ---
-title: Choir
+title: Ngā Manu Tioriori - Onslow College Choir
 image: /assets/images/2014-australia-choir.jpg
-layout: 'page.njk'
+layout: page.njk
 tags: Ensembles
 ---
 <p>The school choir meets on a Monday lunchtime. All are welcome! It is a very happy lively time, and we sing at a range of events across the school year. Chamber choir is a smaller ensemble that meets after school once a week and is for those who really want to take their singing a little more seriously.</p>
