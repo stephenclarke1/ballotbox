@@ -5,50 +5,54 @@ layout: 'base.njk'
 
         <section class="hero hero-homepage" style="background-image: url('/assets/media/hero-purple.jpg');"></section>
         <main id="main" class="content">
-            
-            
-                <div class="content-container bg-primary-light">
-                    <div class="tri bg-primary-light">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                        </svg>
-                    </div>
-                    {%- for section in collections.Homepage  -%}
-                            <section class="homepage-about">
-                                <div class="left">
-                                    <h1>{{ section.data.title }}</h1>
-                                    <p>{{ section.data.description | safe }}</p>
-                                </div>
-                                <div class="right">
-                                    <img src="{{ section.data.image }}" alt="{{ section.data.imageAlt }}">
-                                </div>
-                    {%- endfor -%}
-                    </section>
+            <div class="content-container bg-primary-light">
+                <!-- triangle separator svg -->
+                <div class="tri bg-primary-light">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
                 </div>
-                <!-- <div class="bg-primary-light tri-upside-down" aria-hidden="true"></div> -->
-                <div class="content-container">
-                    <div class="tri tri-upside-down bg-primary-light">
-                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                        </svg>
-                    </div>
-                    <section id="news" class="featured-cards">
-                        <h1>Latest News</h1>
-                        <div class="card-container">
-                            {%- for post in collections.article | reverse -%}
-                                {%- if loop.index0 < 3 %}
-                                    <a href="{{ post.url }}">
-                                        <section class="card bg-secondary-light">
-                                            <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-                                            <h2 class="card-title">{{ post.data.title }}</h2>
-                                            <span class="card-date">{{ post.data.date | postDate }}</span>
-                                            <p>{{ post.data.description }}</p>
-                                        </section>
-                                    </a>
-                                {%- endif %}
-                            {%- endfor -%}
+                <!-- for loop to get about section content -->
+                {%- for section in collections.Homepage  -%}
+                    <section class="homepage-about">
+                        <div class="left">
+                            <h1>{{ section.data.title }}</h1>
+                            <p>{{ section.data.description | safe }}</p>
+                        </div>
+                        <div class="right">
+                            <img src="{{ section.data.image }}" alt="{{ section.data.imageAlt }}">
                         </div>
                     </section>
+                {%- endfor -%}
+            </div>
+                <!-- <div class="bg-primary-light tri-upside-down" aria-hidden="true"></div> -->
+            <div class="content-container">
+                <!-- triangle separator svg -->
+                <div class="tri tri-upside-down bg-primary-light">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
+                <!-- cards section for articles -->
+                <section id="news" class="featured-cards">
+                    <h1>Latest News</h1>
+                    <div class="card-container">
+                        {%- for post in collections.article | reverse -%}
+                            <!-- if statment to only show the latest three posts -->
+                            {%- if loop.index0 < 3 %}
+                                <a href="{{ post.url }}">
+                                    <section class="card bg-secondary-light">
+                                        <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+                                        <h2 class="card-title">{{ post.data.title }}</h2>
+                                        <span class="card-date">{{ post.data.date | postDate }}</span>
+                                        <p>{{ post.data.description }}</p>
+                                    </section>
+                                </a>
+                            {%- endif %}
+                        {%- endfor -%}
+                    </div>
+                    </section>
+                    <!-- videos section, same as articles -->
                     <section id="videos" class="featured-cards">
                         <h1>Latest Videos</h1>
                         <div class="card-container">
@@ -65,6 +69,7 @@ layout: 'base.njk'
                             {%- endfor -%}
                         </div>
                     </section>
+                    <!-- cards with no images, just linking to static pages -->
                     <section id="curriculum" class="featured-cards link-cards">
                         <h1>Learning and Teaching</h1>
                         <div class="card-container">
