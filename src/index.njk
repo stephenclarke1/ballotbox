@@ -2,11 +2,10 @@
 title: Home
 layout: 'base.njk'
 ---
-
 <main class="content">
     <div class="content-container flex-centre">
         <div class="card-container">
-            {%- for post in collections.module -%}
+            {%- for post in collections.module | sortByOrder -%}
                 <a href="{{ post.url }}">
                     <section class="card ">
                         <div class="card-img-container">

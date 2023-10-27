@@ -23,7 +23,7 @@
                             <li>
                                 <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
                                 <ul  id="myDropdown" class="dropdown-submenu">
-                                    {%- for page in collections.module -%}
+                                    {%- for page in collections.module | sortByOrder -%}
                                         <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
                                     {%- endfor -%}
                                 </ul>
