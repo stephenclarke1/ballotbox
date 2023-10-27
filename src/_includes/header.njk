@@ -4,26 +4,32 @@
             <nav class="primary-nav">
                 <div class="mobile-menu-buttons">
                     <a href="/" class="title"><h1>Ballot Box</h1></a>
-                    <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
-                        <div class="hamburger" aria-hidden="true"></div>
-                        <span>Menu</span>
-                    </button>
+                    {% if no_script %}
+                    {% else %}
+                        <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                            <div class="hamburger" aria-hidden="true"></div>
+                            <span>Menu</span>
+                        </button>
+                    {% endif %}
                 </div>
-                <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
-                    <ul id="navList" class="mobile-menu">
-                        {%- for page in collections.mainnav-%}
-                            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-                        {%- endfor -%}
-                        <li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
-                        <li>
-                            <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
-                            <ul  id="myDropdown" class="dropdown-submenu">
-                                {%- for page in collections.module -%}
-                                    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
-                                {%- endfor -%}
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                {% if no_script %}
+                {% else %}
+                    <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
+                        <ul id="navList" class="mobile-menu">
+                            {%- for page in collections.mainnav-%}
+                                <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                            {%- endfor -%}
+                            <li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
+                            <li>
+                                <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
+                                <ul  id="myDropdown" class="dropdown-submenu">
+                                    {%- for page in collections.module -%}
+                                        <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                                    {%- endfor -%}
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                {% endif %}
             </nav>
         </header>

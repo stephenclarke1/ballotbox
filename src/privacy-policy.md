@@ -1,6 +1,7 @@
 ---
 title: Privacy Policy
-layout: page.njk
+layout: 'page.njk'
+no_script: true
 tags:
   - footernav
 ---
