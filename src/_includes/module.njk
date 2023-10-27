@@ -1,0 +1,24 @@
+---
+layout: 'base.njk'
+---
+<main class="content">
+    <div class="content-container">
+        <div class="post-container">
+            <header class="post-header">
+                <h1>{{ title }}</h1>
+            </header>
+            <section class="post-body">
+                <section id="intro" class="post-section box intro-text">
+                    <div>
+                        <figure class="float-left">
+                            <img src="{{ image-icon }}" alt="A map of Aotearoa New Zealand">
+                          </figure>
+                        <p>Democracy is how Aotearoa New Zealand gets things done. It is important for a nation to have a system of democracy that represents people, so that the decisions made by those in power reflect the attitudes of the majority of the population.</p>   
+                    </div>
+                </section>
+                <div class="clear"></div>
+                {{ content }}
+            </section>
+        </div>
+    </div>
+</main>
