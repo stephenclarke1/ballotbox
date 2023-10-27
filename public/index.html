@@ -5,201 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="/assets/scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
-    <title>Home | Onslow College Music</title>
+    <script defer src="/assets/scripts/main.js"></script>
+    
+    <title>Home | BALLOT BOX</title>
 </head>
 <body>
+
+    <div class="header-strip"><p>Please give me <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=b8NN8k9U6Uic4kuk04rffLPggSlbKApDuW7vHF2O7LtUQkdBVFBNVzlSREJTUjA4REk3QlQxUTE0Si4u">some feedback!!!</a></p></div>
     <div class="grid-container" id="top">
-    <header class="page-header">
-        <div class="focus-only-link"><a href="#main">Skip to main content</a></div>
-        <a href="/" class="logo">
-            <img src="/assets/images/onslow-logo.png" alt="Onslow College Emblem" class="onslow-emblem">
-            <div class="logo-wordmark">
-                <span>Onslow College</span>
-                <span>Music</span>
-            </div>
-        </a>
-        <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
-            <div class="hamburger" aria-hidden="true"></div>
-            <span>Menu</span>
-        </button>
-        <nav id="primaryNav" class="primary-nav">
-            <ul role="list" class="nav-list">
-                <li><a href="/" title="Home">Home</a></li>
-                <li>
-                    <button onclick="myFunction(this)" class="dropdown-button">Learning and Teaching</button>
-                    <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/curriculum/music-lessons/">Music Lessons</a></li><!-- remember to make caret turn upside down after pressed -->
-                        <li><a href="/curriculum/junior-school/">Junior School</a></li>
-                        <li><a href="/curriculum/senior-school/">Senior School</a></li>
+        <header class="page-header">
+            <nav class="primary-nav">
+                <div class="mobile-menu-buttons">
+                    <a href="/" class="title"><h1>Ballot Box</h1></a>
+                    <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                        <div class="hamburger" aria-hidden="true"></div>
+                        <span>Menu</span>
+                    </button>
+                </div>
+                <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
+                    <ul id="navList" class="mobile-menu"><li><a href="/contact/">Contact</a></li><li><a href="/2023-general-election/">2023 General Election</a></li><li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
+                        <li>
+                            <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
+                            <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/modules/democracy-in-aotearoa/">Democracy in Aotearoa</a></li><li><a href="/modules/how-to-enrol-vote/">How to Enrol and Vote</a></li><li><a href="/modules/māori-representation/">Māori Representation</a></li><li><a href="/modules/mock-election/">Mock Election</a></li></ul>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <button onclick="myFunction(this)" class="dropdown-button">Ensembles</button>
-                    <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/ensembles/choir/">Choir</a></li><li><a href="/ensembles/orchestra/">Studio Orchestra</a></li></ul>
-                </li>
-                <li><a href="/posts/" title="Posts">Posts</a></li>
-                <li><a href="/events/" title="Events">Events</a></li>
-                <li><a href="/contact/" title="Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>   
+                </div>
+            </nav>
+        </header>
     
-        <section class="hero hero-homepage" style="background-image: url('/assets/media/hero-purple.jpg');"></section>
-        <main id="main" class="content">
-            
-                <div class="tri bg-primary-light" aria-hidden="true"></div>
-                <div class="content-container bg-primary-light"><section class="homepage-about">
-                                <div class="left">
-                                    <h1>About Us</h1>
-                                    <p>The Onslow College Music Department is an inclusive, creative & welcoming community. Students have the freedom to explore a variety of different musical instruments and discover themselves through the beauty of music.
-
-<br><br>
-
-We are very fortunate at Onslow to have plenty of space. The department has 14 different rooms we can use for rehearsals, class work, solo practice and itinerant music lessons. We are well equipped to deal with the high volume of students through our department with Pianos in all but 2 spaces, 3 drum kits and an array of Guitars and percussion. Students are welcome to <a href="/contact/#teachers">book a room</a> for a lunchtime to practice or run a rehearsal or jam.</p>
-                                </div>
-                                <div class="right">
-                                    <img src="/assets/media/sfrq-2022-videothumb.png" alt="Students at SmokeFree Rockquest">
-                                </div></section>
-                </div>
-                <div class="bg-primary-light tri-upside-down" aria-hidden="true"></div>
-                <div class="content-container">
-                    <section id="news" class="featured-cards">
-                        <h1>Latest News</h1>
-                        <div class="card-container">
-                                    <a href="/posts/articles/2022-10-12-MEFA-2022/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="/assets/media/MEFA-2022-featured.jpg" alt="A picture of the Studio Orchestra in September 2022.">
-                                            <h2 class="card-title">MEFA 2022</h2>
-                                            <span class="card-date">12 Oct 2022</span>
-                                            <p>On the morning of the 27th of September, members of the Studio Orchestra piled on to the train, and made their way to Wellington College, for this was the day of the MEFA. After waiting for some time, it was our turn to workshop...</p>
-                                        </section>
-                                    </a>
-                                    <a href="/posts/articles/2022-06-30-matariki-2022/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/M45_Pleiades_Pbkwee.jpg" alt="The matariki star constellation.">
-                                            <h2 class="card-title">Matariki 2022</h2>
-                                            <span class="card-date">30 Jun 2022</span>
-                                            <p>To celebrate Matariki, the Arts department recently held a concert. The studio orchestra, as well as the two choirs performed, along...</p>
-                                        </section>
-                                    </a>
-                                    <a href="/posts/articles/2022-06-14-big-sing-2022/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="/assets/media/Big-Sing-2022.jpg" alt="The logo of the big sing">
-                                            <h2 class="card-title">Big Sing 2022</h2>
-                                            <span class="card-date">14 Jun 2022</span>
-                                            <p>Onslow’s Big Sing Choir proudly performed in The Big Sing at the Michael Fowler Centre on the 9th of June 2022. Despite the wonderfully wet Wellington weather, and a brief power cut, the Choir gave a phenomenal performance to an eager crowd...</p>
-                                        </section>
-                                    </a></div>
-                    </section>
-                    <section id="videos" class="featured-cards">
-                        <h1>Latest Videos</h1>
-                        <div class="card-container">
-                                    <a href="/posts/videos/2022-10-13-big-bunny/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="https://m.media-amazon.com/images/M/MV5BOTI5ZTNkYWQtNDg2Mi00MTBmLTliMGItNTI5YWI5OTZkM2Y2XkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_QL75_UX500_CR0,47,500,281_.jpg" alt="bunny">
-                                            <h2 class="card-title">big bunny</h2>
-                                            <span class="card-date">14 Oct 2022</span>
-                                        </section>
-                                    </a>
-                                    <a href="/posts/videos/2022-10-12-MEFA-2022/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="/assets/media/MEFA-2022-videothumb.jpg" alt="a picture of the MEFA logo">
-                                            <h2 class="card-title">MEFA 2022 Video</h2>
-                                            <span class="card-date">13 Oct 2022</span>
-                                        </section>
-                                    </a>
-                                    <a href="/posts/videos/2022-06-30-matariki-performance/">
-                                        <section class="card bg-secondary-light">
-                                            <img src="/assets/media/matariki-2022-videothumb.png" alt="a picture of the studio orchestra playing">
-                                            <h2 class="card-title">Matariki Performance</h2>
-                                            <span class="card-date">30 Jun 2022</span>
-                                        </section>
-                                    </a></div>
-                    </section>
-                    <section id="curriculum" class="featured-cards link-cards">
-                        <h1>Learning and Teaching</h1>
-                        <div class="card-container">
-                            <a href="/curriculum/junior-school/">
-                                <section class="card bg-secondary-light">
-                                    <div>
-                                        <h2 class="card-title">Junior School</h2>
-                                        <span>Year 9 - 10</span>
-                                    </div>
-                                </section>
-                            </a>
-                            <a href="/curriculum/senior-school/">
-                                <section class="card bg-secondary-light">
-                                    <div>
-                                        <h2 class="card-title">Senior School</h2>
-                                        <span>Year 11 - 13</span>
-                                    </div>
-                                </section>
-                            </a>
-                            <a href="/curriculum/lessons/">
-                                <section class="card bg-secondary-light">
-                                    <div>
-                                        <h2 class="card-title">Music Lessons</h2>
-                                        <span>Extra-curricular</span>
-                                    </div>
-                                </section>
-                            </a>
+<main class="content">
+    <div class="content-container flex-centre">
+        <div class="card-container"><a href="/modules/democracy-in-aotearoa/">
+                    <section class="card ">
+                        <div class="card-img-container">
+                            <img src="/assets/media/nz-map-icon.svg" alt="A black and white vector image of Aotearoa New Zealand">
+                        </div>
+                        <div class="card-content">
+                            <h2>Democracy in Aotearoa</h2>
+                            <p>Democracy is how Aotearoa New Zealand gets things done. Learn about it here.</p>
                         </div>
                     </section>
-                    <section id="ensembles" class="featured-cards img-card-no-article">
-                        <h1>Ensembles</h1>
-                        <div class="card-container">
-                            <a href="/ensembles/choir/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/chamber-choir-featured.png" alt="The Onslow College Chamber Choir pictured while performing in a church">
-                                    <h2 class="card-title">Choir</h2>
-                                </section>
-                            </a>
-                            <a href="/ensembles/orchestra/">
-                                <section class="card bg-secondary-light">
-                                    <img src="/assets/images/sydney-trip-featured.png" alt="The Onslow College Orchestra pictured in front of the Sydney Opera House">
-                                    <h2 class="card-title">Orchestra</h2>
-                                </section>
-                            </a>
+                </a><a href="/modules/how-to-enrol-vote/">
+                    <section class="card ">
+                        <div class="card-img-container">
+                            <img src="/assets/media/noun-checkbox.svg" alt="An icon of a checkbox with a tick in it">
+                        </div>
+                        <div class="card-content">
+                            <h2>How to Enrol and Vote</h2>
+                            <p>This module is all about the voting process and Aotearoa&#39;s unique system of electing its representatives.</p>
                         </div>
                     </section>
-                </div>
-        </main>
-        
-
-    <footer class="footer bg-secondary-medium">
-    <div class="tri bg-secondary-medium" aria-hidden="true"></div>
-    <div class="footer-grid-container">
-        <nav>
-            <ul role="list" class="nav-list">
-                <li><a href="https://onslow.school.nz" title="Onslow College Website">onslow.school.nz</a></li>
-                <li><a href="/" title="Home">Home</a></li>
-                <li><a href="/curriculum/lessons/" title="Music Lessons">Music Lessons</a></li>
-                <li><a href="/events/" title="Events">Events</a></li>
-                <li><a href="/contact/" title="Contact">Contact</a></li>
-                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="#top" title="Back to top">Back to top</a></li>
-            </ul>
-        </nav>
-        <div class="small-print">
-            <p></p>
-            <p>© Onslow College 2022</p>
-        </div>
+                </a><a href="/modules/māori-representation/">
+                    <section class="card ">
+                        <div class="card-img-container">
+                            <img src="assets/media/noun-group-of-people.svg" alt="An icon of a group of people">
+                        </div>
+                        <div class="card-content">
+                            <h2>Māori Representation</h2>
+                            <p>Māori have a distinct relationship with the Pākehā system of governance that Aotearoa now has.</p>
+                        </div>
+                    </section>
+                </a><a href="/modules/mock-election/">
+                    <section class="card ">
+                        <div class="card-img-container">
+                            <img src="assets/media/logo_stroke_fullcolour.svg" alt="An icon of an orange ballot box">
+                        </div>
+                        <div class="card-content">
+                            <h2>Mock Election</h2>
+                            <p>When you&#39;re ready to vote, participate in the mock election!</p>
+                        </div>
+                    </section>
+                </a></div>
     </div>
+</main>
+
+    <footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/welcome-page/">Update your saved details</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="#top">Back to top</a></li>
+            <li><a href="#" id="shielded-logo">
+                <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="60" width="60"></a>
+            <script src="https://staticcdn.co.nz/embed/embed.js"></script>
+            <script>
+                (function () {
+                    window.onload = function(){
+                        var frameName = new ds07o6pcmkorn({
+                            openElementId: "#shielded-logo",
+                            modalID: "modal",
+                        });
+                        frameName.init();
+                    }
+                })();
+            </script></li>
+            <li>Icons from <a href="https://thenounproject.com">Noun Project</a></li>
+        </ul>
+    </nav>
 </footer>
 </div>
 
-    <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
 </body>
 </html>

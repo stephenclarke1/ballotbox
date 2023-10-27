@@ -8,15 +8,18 @@ layout: 'base.njk'
                 <h1>{{ title }}</h1>
             </header>
             <section class="post-body">
-                <section id="intro" class="post-section box intro-text">
-                    <div>
-                        <figure class="float-left">
-                            <img src="{{ image-icon }}" alt="A map of Aotearoa New Zealand">
-                          </figure>
-                        <p>Democracy is how Aotearoa New Zealand gets things done. It is important for a nation to have a system of democracy that represents people, so that the decisions made by those in power reflect the attitudes of the majority of the population.</p>   
-                    </div>
-                </section>
-                <div class="clear"></div>
+                {% if intro_text %}
+                    <section id="intro" class="post-section box intro-text">
+                        <div>
+                            <figure class="float-left">
+                                <img src="{{ intro_image.src }}" alt="{{ intro_image.alt }}">
+                                <figcaption>{{ intro_image_caption }}<br><i>{{ intro_image_credit | safe }}</i></figcaption>
+                            </figure>
+                            <p>{{ intro_text }}</p>   
+                        </div>
+                    </section>
+                    <div class="clear"></div>
+                {% endif %}
                 {{ content | safe }}
             </section>
         </div>

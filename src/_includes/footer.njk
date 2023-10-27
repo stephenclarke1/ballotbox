@@ -2,7 +2,9 @@
     <nav class="footer-nav">
         <ul>
             <li><a href="/welcome-page/">Update your saved details</a></li>
-            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            {%- for page in collections.footernav-%}
+                <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+            {%- endfor -%}
             <li><a href="#top">Back to top</a></li>
             <li><a href="#" id="shielded-logo">
                 <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="60" width="60"></a>

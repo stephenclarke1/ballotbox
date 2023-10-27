@@ -11,15 +11,16 @@
                 </div>
                 <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
                     <ul id="navList" class="mobile-menu">
-                        <li><a href="/2023-general-election/">2023 General Election</a></li>
+                        {%- for page in collections.mainnav-%}
+                            <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                        {%- endfor -%}
                         <li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
                         <li>
                             <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
                             <ul  id="myDropdown" class="dropdown-submenu">
-                                <li><a href="/modules/democracy-in-aotearoa/">Democracy in Aotearoa</a></li>
-                                <li><a href="/modules/how-to-enrol-vote/">How to Enrol and Vote</a></li>
-                                <li><a href="/modules/māori-representation/">Māori Representation</a></li>
-                                <li><a href="/modules/mock-election/">Mock Election</a></li>
+                                {%- for page in collections.module -%}
+                                    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+                                {%- endfor -%}
                             </ul>
                         </li>
                     </ul>

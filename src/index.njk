@@ -5,21 +5,19 @@ layout: 'base.njk'
 
 <main class="content">
     <div class="content-container flex-centre">
-        <h1>Modules</h1>
         <div class="card-container">
-            {%- for post in collections.article | reverse -%}
-                <!-- if statment to only show the latest three posts -->
-                    <a href="{{ post.url }}">
-                        <section class="card ">
-                            <div class="card-img-container">
-                                <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
-                            </div>
-                            <div class="card-content">
-                                <h2>{{ post.data.title }}</h2>
-                                <p>{{ post.data.description }}</p>
-                            </div>
-                        </section>
-                    </a>
+            {%- for post in collections.module -%}
+                <a href="{{ post.url }}">
+                    <section class="card ">
+                        <div class="card-img-container">
+                            <img src="{{ post.data.icon_image.src }}" alt="{{ post.data.icon_image.alt }}">
+                        </div>
+                        <div class="card-content">
+                            <h2>{{ post.data.title }}</h2>
+                            <p>{{ post.data.description }}</p>
+                        </div>
+                    </section>
+                </a>
             {%- endfor -%}
         </div>
     </div>

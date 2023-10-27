@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
+    <script defer src="/assets/scripts/main.js"></script>
+    
+    <title>Welcome | BALLOT BOX</title>
+</head>
+<body>
+
+    <div class="header-strip"><p>Please give me <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=b8NN8k9U6Uic4kuk04rffLPggSlbKApDuW7vHF2O7LtUQkdBVFBNVzlSREJTUjA4REk3QlQxUTE0Si4u">some feedback!!!</a></p></div>
+    <div class="grid-container" id="top">
+        <header class="page-header">
+            <nav class="primary-nav">
+                <div class="mobile-menu-buttons">
+                    <a href="/" class="title"><h1>Ballot Box</h1></a>
+                    <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                        <div class="hamburger" aria-hidden="true"></div>
+                        <span>Menu</span>
+                    </button>
+                </div>
+                <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
+                    <ul id="navList" class="mobile-menu"><li><a href="/contact/">Contact</a></li><li><a href="/2023-general-election/">2023 General Election</a></li><li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
+                        <li>
+                            <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
+                            <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/modules/democracy-in-aotearoa/">Democracy in Aotearoa</a></li><li><a href="/modules/how-to-enrol-vote/">How to Enrol and Vote</a></li><li><a href="/modules/māori-representation/">Māori Representation</a></li><li><a href="/modules/mock-election/">Mock Election</a></li></ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    <main class="content">
+    <div class="content-container flex-centre">
+        <form id="myForm" name="form" action="/" onsubmit="getData(this)" >
+            <div>
+                <h2>Welcome To <span class="wordmark">Ballot Box</span></h2>
+                <p>In order to personalise your experience, we need some information about you.</p>
+                <p>Concerned about your data? Check out our <a href="/privacy-policy">privacy policy</a>.</p>
+            </div>
+            <h3>Please Select Your Age:</h3>
+            <div class="radio-buttons">
+                <div>
+                    <input type="radio" id="u17" required name="agegroup" value="u17">
+                    <label for="u17">Under 17</label>
+                </div>
+                <div>
+                    <input type="radio" id="17" name="agegroup" value="17">
+                    <label for="17">17</label>
+                </div>
+                <div>
+                    <input type="radio" id="18" name="agegroup" value="18">
+                    <label for="18">18 and older</label>
+                </div>
+            </div>
+            <h3>Please Select Your Electorate:</h3>
+            <p>If you aren't sure which electorate you're in, visit <a target="_blank" href="https://vote.nz/maps/find-your-electorate/">the offical map</a>.</p>
+            <select name="electorate" required id="electorate">
+                <option value=""></option>
+                <option value="ohariu">Ōhāriu</option>
+                <option value="tetaitonga">Te Tai Tonga</option>
+                <option value="wellingtoncentral">Wellington Central</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="result"></div>
+        <script  type="text/javascript">
+            function store(){
+               var inputAge= document.getElementsByName("agegroup");
+               localStorage.setItem("agegroup", inputAge.value);
+               localStorage.setItem("formComplete", "false");
+
+            }
+
+              var storedValue = localStorage.getItem("agegroup");
+
+              function getData(form) {
+                var formData = new FormData(form);
+
+                const obj = Object.fromEntries(formData);
+                console.log(obj);
+                localStorage.setItem("formdata", JSON.stringify(obj));
+                }
+
+                document.getElementById("myForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                window.location.href = "/";
+                });
+          </script>
+    </div>
+</main>
+    <footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/welcome-page/">Update your saved details</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="#top">Back to top</a></li>
+            <li><a href="#" id="shielded-logo">
+                <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="60" width="60"></a>
+            <script src="https://staticcdn.co.nz/embed/embed.js"></script>
+            <script>
+                (function () {
+                    window.onload = function(){
+                        var frameName = new ds07o6pcmkorn({
+                            openElementId: "#shielded-logo",
+                            modalID: "modal",
+                        });
+                        frameName.init();
+                    }
+                })();
+            </script></li>
+            <li>Icons from <a href="https://thenounproject.com">Noun Project</a></li>
+        </ul>
+    </nav>
+</footer>
+</div>
+
+</body>
+</html>

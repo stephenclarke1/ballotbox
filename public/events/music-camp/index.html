@@ -5,51 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/style.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script src="/assets/scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
-    <title>Music Camp | Onslow College Music</title>
+    <script defer src="/assets/scripts/main.js"></script>
+    
+    <title>Music Camp | BALLOT BOX</title>
 </head>
 <body>
+
+    <div class="header-strip"><p>Please give me <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=b8NN8k9U6Uic4kuk04rffLPggSlbKApDuW7vHF2O7LtUQkdBVFBNVzlSREJTUjA4REk3QlQxUTE0Si4u">some feedback!!!</a></p></div>
     <div class="grid-container" id="top">
-    <header class="page-header">
-        <div class="focus-only-link"><a href="#main">Skip to main content</a></div>
-        <a href="/" class="logo">
-            <img src="/assets/images/onslow-logo.png" alt="Onslow College Emblem" class="onslow-emblem">
-            <div class="logo-wordmark">
-                <span>Onslow College</span>
-                <span>Music</span>
-            </div>
-        </a>
-        <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
-            <div class="hamburger" aria-hidden="true"></div>
-            <span>Menu</span>
-        </button>
-        <nav id="primaryNav" class="primary-nav">
-            <ul role="list" class="nav-list">
-                <li><a href="/" title="Home">Home</a></li>
-                <li>
-                    <button onclick="myFunction(this)" class="dropdown-button">Learning and Teaching</button>
-                    <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/curriculum/music-lessons/">Music Lessons</a></li><!-- remember to make caret turn upside down after pressed -->
-                        <li><a href="/curriculum/junior-school/">Junior School</a></li>
-                        <li><a href="/curriculum/senior-school/">Senior School</a></li>
+        <header class="page-header">
+            <nav class="primary-nav">
+                <div class="mobile-menu-buttons">
+                    <a href="/" class="title"><h1>Ballot Box</h1></a>
+                    <button onclick="menuToggle()" id="menuButton" class="menu-toggle-button">
+                        <div class="hamburger" aria-hidden="true"></div>
+                        <span>Menu</span>
+                    </button>
+                </div>
+                <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
+                    <ul id="navList" class="mobile-menu"><li><a href="/contact/">Contact</a></li><li><a href="/2023-general-election/">2023 General Election</a></li><li><a href="/electorates/" class="electoratelink">My Electorate</a></li>
+                        <li>
+                            <button onclick="myFunction(this)" class="dropdown-button">Modules</button>
+                            <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/modules/democracy-in-aotearoa/">Democracy in Aotearoa</a></li><li><a href="/modules/how-to-enrol-vote/">How to Enrol and Vote</a></li><li><a href="/modules/māori-representation/">Māori Representation</a></li><li><a href="/modules/mock-election/">Mock Election</a></li></ul>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <button onclick="myFunction(this)" class="dropdown-button">Ensembles</button>
-                    <ul  id="myDropdown" class="dropdown-submenu"><li><a href="/ensembles/choir/">Choir</a></li><li><a href="/ensembles/orchestra/">Studio Orchestra</a></li></ul>
-                </li>
-                <li><a href="/posts/" title="Posts">Posts</a></li>
-                <li><a href="/events/" title="Events">Events</a></li>
-                <li><a href="/contact/" title="Contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>   
+                </div>
+            </nav>
+        </header>
     
 <section class="hero hero-no-image"></section>
 
         <main id="main" class="content">
-                <div class="tri bg-text-light" aria-hidden="true"></div>
+            <div class="tri bg-text-light">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
                 <div class="post-container content-container">
                     <header class="post-header">
                         <h1 class="headline">Music Camp</h1>
@@ -65,38 +57,29 @@
                     </section>
                 </div>
         </main>
-    <footer class="footer bg-secondary-medium">
-    <div class="tri bg-secondary-medium" aria-hidden="true"></div>
-    <div class="footer-grid-container">
-        <nav>
-            <ul role="list" class="nav-list">
-                <li><a href="https://onslow.school.nz" title="Onslow College Website">onslow.school.nz</a></li>
-                <li><a href="/" title="Home">Home</a></li>
-                <li><a href="/curriculum/lessons/" title="Music Lessons">Music Lessons</a></li>
-                <li><a href="/events/" title="Events">Events</a></li>
-                <li><a href="/contact/" title="Contact">Contact</a></li>
-                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                <li><a href="#top" title="Back to top">Back to top</a></li>
-            </ul>
-        </nav>
-        <div class="small-print">
-            <p></p>
-            <p>© Onslow College 2022</p>
-        </div>
-    </div>
+    <footer>
+    <nav class="footer-nav">
+        <ul>
+            <li><a href="/welcome-page/">Update your saved details</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="#top">Back to top</a></li>
+            <li><a href="#" id="shielded-logo">
+                <img alt="shielded" src="https://shielded.co.nz/img/custom-logo.png" height="60" width="60"></a>
+            <script src="https://staticcdn.co.nz/embed/embed.js"></script>
+            <script>
+                (function () {
+                    window.onload = function(){
+                        var frameName = new ds07o6pcmkorn({
+                            openElementId: "#shielded-logo",
+                            modalID: "modal",
+                        });
+                        frameName.init();
+                    }
+                })();
+            </script></li>
+            <li>Icons from <a href="https://thenounproject.com">Noun Project</a></li>
+        </ul>
+    </nav>
 </footer>
 </div>
 
-    <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
 </body>
 </html>

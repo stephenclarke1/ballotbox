@@ -1,23 +1,17 @@
 ---
 layout: 'base.njk'
 ---
-{% if image %}
-<section class="hero" style="background-image: url('{{ image }}');"></section>
-{% else %}
-<section class="hero hero-no-image"></section>
-{% endif %}
-        <main id="main" class="content">
-            <div class="tri bg-text-light">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-                </svg>
-            </div>
-                <div class="post-container content-container">
-                    <header class="post-header">
-                        <h1 class="headline">{{ title }}</h1>
-                    </header>
-                    <section class="post-body">
-                        {{ content | safe }}
-                    </section>
+<main id="main" class="content">
+    <div class="content-container {{ 'flex-centre' if flex_centre }}">
+        <div class="post-container">
+            <header class="post-header">
+                <h1>{{ title }}</h1>
+            </header>
+            <section class="post-body">
+                <div>
+                    {{ content | safe }}
                 </div>
-        </main>
+            </section>
+        </div>
+    </div>
+</main>

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
     <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
     <script defer src="/assets/scripts/main.js"></script>
+    {% if conditonal_voting %}
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var formCompleteValue = localStorage.getItem("formComplete");
+                
+                if (formCompleteValue === "true") {
+                    window.location.replace("/modules/mock-election/results");
+                };
+            });
+        </script>
+    {% endif %}
     <title>{{ title }} | BALLOT BOX</title>
 </head>
 <body>

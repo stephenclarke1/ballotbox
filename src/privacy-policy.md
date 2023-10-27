@@ -1,20 +1,17 @@
 ---
 title: Privacy Policy
 layout: page.njk
-footerText: ❤️
+tags:
+  - footernav
 ---
-We may collect personal information from you, including information about your:
+<figure style="max-width: 230px !important;" class="float-left">
+    <img style="max-width: 230px !important;" src="/assets/media/stacked_logo.png" alt="The Ballot Box Logo">
+</figure>
 
-* Name
-* Email Address
+We ask for your age and electorate in order to serve you pages that are tailored to you. This information is kept on your device, and will not be sent to us or a third party.
 
-We collect your personal information in order to feature your work on the website, and **we will only ever ask you for this information if we need it.**
+The information that you submit in the mock election is anonymous, unidentifiable, and kept on a secure server. It will be deleted every year. We use Formester to manage the backend of the mock election page. Read their <a href="https://embedquiz.com/privacy-policy" target="_blank">privacy policy</a>.
 
-We **do not** use cookies on this website.
+We use EmbedQuiz for the quizzes in the modules. Read their <a href="https://embedquiz.com/privacy-policy" target="_blank">privacy policy</a>. We do not keep a record of your responses.
 
-We keep your information safe by storing it in encrypted places and only allowing the music teachers to access it.
-
-We may use tools from Microsoft and Google on our website. We will always make sure you know when you are using their services.
-
-You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
-If you’d like to ask for a copy of your information, or to have it corrected, please contact us at **[stephen.clarke@student.onslow.school.nz](mailto:stephen.clarke@student.onslow.school.nz)**.
+We use Easypolls for our polls on some of the pages. Read their <a target="_blank" href="https://www.easypolls.net/#/privacy">privacy policy</a>.

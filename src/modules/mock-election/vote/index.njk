@@ -1,0 +1,36 @@
+---
+title: Vote
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <script src="https://kit.fontawesome.com/b1101e5655.js" crossorigin="anonymous"></script>
+    <script defer src="/assets/scripts/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                var formCompleteValue = localStorage.getItem("formComplete");
+                
+                if (formCompleteValue === "true") {
+                    window.location.replace("/modules/mock-election/results");
+                };
+            });
+        </script>
+    <title>{{ title }} | BALLOT BOX</title>
+</head>
+<body>
+
+    {% include 'header.njk' %}
+    <main class="content">
+        <div class="content-container flex-centre">
+            <div class="iframe-container-vote"><iframe src="" class="electoratelink" frameborder="0"></iframe></div>
+        </div>
+    </main>
+    {% include 'footer.njk' %}
+
+</body>
+</html>
+
