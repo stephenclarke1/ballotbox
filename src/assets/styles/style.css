@@ -166,18 +166,6 @@ a:focus, a:hover {
   max-width: var(--max-width-content);
 }
 
-.under17 {
-  display: none;
-}
-
-.age18 {
-  display: none;
-}
-
-.age17 {
-  display: none;
-}
-
 .page-header {
   grid-area: header;
   background-color: var(--clr-primary-dark);
@@ -668,6 +656,19 @@ footer a {
 .mobile-only {
   display: none;
 }
+
+.under17 {
+  display: none;
+}
+
+.age18 {
+  display: none;
+}
+
+.age17 {
+  display: none;
+}
+
 
 @media screen and (max-width: 1200px) {
   .content-container > * {
