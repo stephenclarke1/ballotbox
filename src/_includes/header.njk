@@ -16,6 +16,7 @@
                 {% else %}
                     <div id="mobileMenuWrapper" class="mobile-menu-wrapper">
                         <ul id="navList" class="mobile-menu">
+                            <li><a href="/">Home</a></li>
                             {%- for page in collections.mainnav-%}
                                 <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
                             {%- endfor -%}
